@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Rooms from './pages/Rooms';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <ScrollToTop />
+      <SpeedInsights />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
