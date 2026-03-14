@@ -209,6 +209,10 @@ const Enquiry: React.FC = () => {
                     <span className="material-symbols-outlined font-bold">mail</span>
                     amanbhatiya153@gmail.com
                   </a>
+                  <div className="flex items-start gap-4 text-slate-500 text-sm mt-2">
+                    <span className="material-symbols-outlined text-primary font-bold">location_on</span>
+                    <span>Krishna Balaram International Guest House, Bhaktivedanta Swami Marg, Raman Reiti, Vrindavan, Uttar Pradesh 281121</span>
+                  </div>
                 </div>
              </div>
           </aside>

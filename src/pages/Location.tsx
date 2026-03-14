@@ -56,6 +56,10 @@ const Location: React.FC = () => {
                <h3 className="text-lg font-bold mb-4">How to Reach Us</h3>
                <div className="space-y-6">
                  <div>
+                   <h4 className="text-sm font-bold text-primary uppercase tracking-widest mb-2">Our Address</h4>
+                   <p className="text-sm text-slate-800 font-medium">Krishna Balaram International Guest House, Bhaktivedanta Swami Marg, Raman Reiti, Vrindavan, Uttar Pradesh 281121</p>
+                 </div>
+                 <div>
                    <h4 className="text-sm font-bold text-primary uppercase tracking-widest mb-2">By Train</h4>
                    <p className="text-sm text-slate-600">The nearest major station is Mathura Junction (15km). Local trains also stop at Vrindavan Station.</p>
                  </div>

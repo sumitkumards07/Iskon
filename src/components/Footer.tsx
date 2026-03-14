@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             </li>
             <li className="flex gap-3">
               <span className="material-symbols-outlined text-primary text-sm font-bold">location_on</span> 
-              Raman Reti, Vrindavan, UP 281121
+              Krishna Balaram International Guest House, Bhaktivedanta Swami Marg, Raman Reiti, Vrindavan, Uttar Pradesh 281121
             </li>
           </ul>
         </div>
