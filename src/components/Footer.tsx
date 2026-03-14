@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
         <div className="col-span-1 md:col-span-1">
           <div className="flex items-center gap-3 mb-6">
             <span className="material-symbols-outlined text-3xl text-primary font-bold">temple_hindu</span>
-            <span className="text-xl font-bold">Vrindavan Serenity</span>
+            <span className="text-2xl font-display font-medium text-background-dark">Vrindavan Serenity</span>
           </div>
-          <p className="text-sm text-slate-500 leading-relaxed mb-6">
+          <p className="text-sm text-background-dark/60 leading-relaxed mb-6">
             A boutique luxury hotel dedicated to providing a spiritual sanctuary for devotees and travelers from around the world.
           </p>
           <div className="flex gap-4">

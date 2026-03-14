@@ -4,12 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#f4c025",
-        "background-light": "#f8f8f5",
-        "background-dark": "#221e10",
+        primary: "#d4af37", // Premium Gold
+        "background-light": "#fdfcf0", // Pearl White
+        "background-dark": "#1a2a4e", // Royal Navy
       },
       fontFamily: {
-        display: ["Work Sans", "sans-serif"],
+        display: ["Cormorant Garamond", "serif"],
+        body: ["Work Sans", "sans-serif"],
       },
       borderRadius: {
         DEFAULT: "0.5rem",

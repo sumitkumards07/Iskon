@@ -35,10 +35,10 @@ const Navbar: React.FC = () => {
             <span className="material-symbols-outlined text-4xl">temple_hindu</span>
           </div>
           <div>
-            <h1 className={`text-xl font-bold leading-none tracking-tight transition-colors ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
+            <h1 className={`text-2xl font-display font-medium leading-none tracking-tight transition-colors ${isScrolled ? 'text-background-dark' : 'text-white'}`}>
               Vrindavan Serenity
             </h1>
-            <p className="text-[10px] uppercase tracking-[0.2em] text-primary font-semibold">Luxury Near ISKCON</p>
+            <p className="text-[10px] uppercase tracking-[0.2em] text-primary font-bold">LUXURY PILGRIMAGE</p>
           </div>
         </Link>
 

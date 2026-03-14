@@ -35,8 +35,8 @@ const Rooms: React.FC = () => {
     <div className="pt-24 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-black mb-4">Our Sacred Suites</h1>
-          <p className="text-slate-600 text-lg max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-display font-medium mb-4">Our Sacred Suites</h1>
+          <p className="text-background-dark/60 text-lg max-w-2xl">
             Each room at Vrindavan Serenity is designed to provide a tranquil atmosphere for your spiritual journey.
           </p>
         </div>
@@ -66,10 +66,10 @@ const Rooms: React.FC = () => {
               <div className="md:w-3/5 p-8 flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">{room.title}</h3>
-                    <p className="text-primary font-black text-xl">{room.price}</p>
+                    <h3 className="text-2xl font-display font-medium group-hover:text-primary transition-colors">{room.title}</h3>
+                    <p className="text-primary font-bold text-xl">{room.price}</p>
                   </div>
-                  <p className="text-slate-500 text-sm mb-6 leading-relaxed">
+                  <p className="text-background-dark/50 text-sm mb-6 leading-relaxed">
                     {room.desc}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-8">

@@ -22,8 +22,8 @@ const Enquiry: React.FC = () => {
     <div className="pt-24 pb-20 px-6 bg-background-light">
       <div className="max-w-6xl mx-auto">
         <div className="mb-10 text-center md:text-left">
-          <h1 className="text-4xl font-black mb-2">Plan Your Sacred Stay</h1>
-          <p className="text-slate-600 text-lg">Vrindavan awaits you. Fill in the details below to check availability.</p>
+          <h1 className="text-4xl font-display font-medium mb-2">Plan Your Sacred Stay</h1>
+          <p className="text-background-dark/60 text-lg">Vrindavan awaits you. Fill in the details below to check availability.</p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12">
@@ -37,7 +37,7 @@ const Enquiry: React.FC = () => {
             >
               {/* Personal Info */}
               <section className="bg-white p-8 rounded-[2rem] shadow-lg border border-primary/5">
-                <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
+                <h3 className="text-xl font-display font-medium mb-6 flex items-center gap-2">
                   <span className="material-symbols-outlined text-primary font-bold">person</span>
                   Contact Information
                 </h3>
@@ -81,7 +81,7 @@ const Enquiry: React.FC = () => {
 
               {/* Booking Details */}
               <section className="bg-white p-8 rounded-[2rem] shadow-lg border border-primary/5">
-                <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
+                <h3 className="text-xl font-display font-medium mb-6 flex items-center gap-2">
                   <span className="material-symbols-outlined text-primary font-bold">meeting_room</span>
                   Stay Details
                 </h3>
@@ -152,7 +152,7 @@ const Enquiry: React.FC = () => {
           <aside className="lg:w-80 flex flex-col gap-8">
              <div className="bg-background-dark text-white p-8 rounded-[2rem] shadow-2xl relative overflow-hidden">
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-bold mb-4">Why Book With Us?</h3>
+                  <h3 className="text-2xl font-display font-medium mb-4">Why Book With Us?</h3>
                   <ul className="space-y-4">
                     {[
                       { icon: 'priority_high', text: 'Priority Temple Access' },

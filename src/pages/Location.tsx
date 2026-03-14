@@ -6,8 +6,8 @@ const Location: React.FC = () => {
     <div className="pt-24 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-black mb-4">Finding Serenity</h1>
-          <p className="text-slate-600 text-lg max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-display font-medium mb-4">Finding Serenity</h1>
+          <p className="text-background-dark/60 text-lg max-w-2xl">
             Steps away from the sacred, miles away from the ordinary. Vrindavan Serenity is perfectly positioned for your spiritual practice.
           </p>
         </div>
@@ -16,7 +16,7 @@ const Location: React.FC = () => {
           <div className="space-y-10">
             {/* Proximity List */}
             <section>
-              <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
+              <h3 className="text-xl font-display font-medium mb-6 flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary font-bold">near_me</span>
                 Key Landmarks
               </h3>
@@ -79,7 +79,7 @@ const Location: React.FC = () => {
                  <motion.div 
                    animate={{ y: [0, -10, 0] }}
                    transition={{ repeat: Infinity, duration: 2 }}
-                   className="text-primary drop-shadow-[0_0_10px_rgba(244,192,37,0.5)]"
+                   className="text-primary drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]"
                  >
                    <span className="material-symbols-outlined text-6xl font-bold fill-1">location_on</span>
                  </motion.div>

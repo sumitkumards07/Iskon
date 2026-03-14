@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10s] hover:scale-105" 
           style={{ 
-            backgroundImage: `linear-gradient(to bottom, rgba(34, 30, 16, 0.4), rgba(34, 30, 16, 0.8)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0wu8UPxxhh7IWuOt2lr2xnF9J_NqkpAQAR6yVzBKcwporSEeekyZ7C3mKu9Hc3L7n8maEv3KlBtfMLNN5kMYZXn4ilQGRn2ZAZ_b9KJFHYSnyx0UHIPvn9GWX3lesIl-jXEiT0fwgK-PGuUSgGM5Gaw09T9rDSXMC2C9ZWmnuWzNjt02dUn1Xv8_4VmzyqC8IRWVeGAsXlq8ECOov_W8fuwGXMRCPH3zWO66neS0z1Wu36ISteCvmjfBvfS7M7MnH51u0cxipRg")` 
+            backgroundImage: `linear-gradient(to bottom, rgba(26, 42, 78, 0.4), rgba(26, 42, 78, 0.8)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0wu8UPxxhh7IWuOt2lr2xnF9J_NqkpAQAR6yVzBKcwporSEeekyZ7C3mKu9Hc3L7n8maEv3KlBtfMLNN5kMYZXn4ilQGRn2ZAZ_b9KJFHYSnyx0UHIPvn9GWX3lesIl-jXEiT0fwgK-PGuUSgGM5Gaw09T9rDSXMC2C9ZWmnuWzNjt02dUn1Xv8_4VmzyqC8IRWVeGAsXlq8ECOov_W8fuwGXMRCPH3zWO66neS0z1Wu36ISteCvmjfBvfS7M7MnH51u0cxipRg")` 
           }}
         />
         <div className="relative h-full max-w-7xl mx-auto px-6 flex flex-col items-center justify-center text-center">
@@ -26,14 +26,14 @@ const Home: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-black text-white mb-6 leading-[1.1]"
+            className="text-5xl md:text-8xl font-display font-medium text-white mb-6 leading-[1.1]"
           >
             Luxury Within The <br/>
             <motion.span 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
-              className="text-primary"
+              className="text-primary italic"
             >
               Temple's Embrace
             </motion.span>
@@ -119,7 +119,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
               <h3 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4">Luxury Accommodations</h3>
-              <h2 className="text-4xl md:text-5xl font-bold">Divine Comfort in Every Suite</h2>
+              <h2 className="text-4xl md:text-5xl font-display font-medium">Divine Comfort in Every Suite</h2>
             </div>
             <Link to="/rooms" className="text-primary font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
               VIEW ALL ROOMS <span className="material-symbols-outlined font-bold">arrow_right_alt</span>
@@ -237,7 +237,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col gap-8">
             <div>
               <h3 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4">Location & Accessibility</h3>
-              <h2 className="text-4xl font-bold mb-6">At the Heart of Brij</h2>
+              <h2 className="text-4xl font-display font-medium mb-6">At the Heart of Brij</h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-6">
                 Vrindavan Serenity is strategically located to offer you the ease of walking to the most sacred sites while maintaining a bubble of peace away from the main road bustle.
               </p>
@@ -282,7 +282,7 @@ const Home: React.FC = () => {
              <span className="material-symbols-outlined text-[300px]">temple_hindu</span>
           </div>
           <span className="material-symbols-outlined text-6xl text-background-dark mb-6 font-bold">mail_outline</span>
-          <h2 className="text-3xl md:text-5xl font-black text-background-dark mb-6">Plan Your Pilgrimage</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-medium text-background-dark mb-6">Plan Your Pilgrimage</h2>
           <p className="max-w-xl text-background-dark/80 text-lg mb-10 font-medium">
             Have special requirements or planning a group visit? Leave your contact details and our concierge will curate your spiritual stay.
           </p>
