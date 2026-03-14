@@ -113,45 +113,6 @@ const Home: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <h3 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4">The Serenity Difference</h3>
-          <h2 className="text-4xl md:text-5xl font-bold">Why Discriminating Seekers Choose Us</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {[
-            {
-              icon: 'location_on',
-              title: 'Sacred Proximity',
-              desc: "Located just 2 minutes walking distance from ISKCON's main gate, ensuring you never miss a Mangala Aarti."
-            },
-            {
-              icon: 'spa',
-              title: 'Spiritual Serenity',
-              desc: "Soundproofed rooms and meditation halls designed to preserve the quietude of your spiritual practice."
-            },
-            {
-              icon: 'restaurant',
-              title: 'Gourmet Sattvic Dining',
-              desc: "Fine dining experience serving pure vegetarian, onion-free, and garlic-free cuisines prepared with devotion."
-            }
-          ].map((feature, idx) => (
-            <motion.div 
-              key={idx}
-              whileHover={{ y: -10 }}
-              className="flex flex-col items-center text-center p-8 rounded-3xl bg-primary/5 border border-primary/10 transition-shadow hover:shadow-xl group"
-            >
-              <div className="size-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
-                <span className="material-symbols-outlined text-4xl font-bold">{feature.icon}</span>
-              </div>
-              <h4 className="text-xl font-bold mb-4">{feature.title}</h4>
-              <p className="text-slate-600 leading-relaxed">{feature.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
       {/* Featured Rooms Section */}
       <section className="py-24 bg-background-dark text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
@@ -207,6 +168,45 @@ const Home: React.FC = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-24 px-6 max-w-7xl mx-auto">
+        <div className="text-center mb-20">
+          <h3 className="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4">The Serenity Difference</h3>
+          <h2 className="text-4xl md:text-5xl font-bold">Why Discriminating Seekers Choose Us</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {[
+            {
+              icon: 'location_on',
+              title: 'Sacred Proximity',
+              desc: "Located just 2 minutes walking distance from ISKCON's main gate, ensuring you never miss a Mangala Aarti."
+            },
+            {
+              icon: 'spa',
+              title: 'Spiritual Serenity',
+              desc: "Soundproofed rooms and meditation halls designed to preserve the quietude of your spiritual practice."
+            },
+            {
+              icon: 'restaurant',
+              title: 'Gourmet Sattvic Dining',
+              desc: "Fine dining experience serving pure vegetarian, onion-free, and garlic-free cuisines prepared with devotion."
+            }
+          ].map((feature, idx) => (
+            <motion.div 
+              key={idx}
+              whileHover={{ y: -10 }}
+              className="flex flex-col items-center text-center p-8 rounded-3xl bg-primary/5 border border-primary/10 transition-shadow hover:shadow-xl group"
+            >
+              <div className="size-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
+                <span className="material-symbols-outlined text-4xl font-bold">{feature.icon}</span>
+              </div>
+              <h4 className="text-xl font-bold mb-4">{feature.title}</h4>
+              <p className="text-slate-600 leading-relaxed">{feature.desc}</p>
+            </motion.div>
+          ))}
         </div>
       </section>
 
