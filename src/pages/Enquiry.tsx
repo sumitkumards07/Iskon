@@ -70,7 +70,7 @@ const Enquiry: React.FC = () => {
                       <input 
                         required
                         className="flex-1 h-14 px-6 rounded-2xl bg-background-light border-none focus:ring-2 focus:ring-primary transition-all"
-                        placeholder="9876543210"
+                        placeholder="9306592069"
                         value={formData.phone}
                         onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       />
@@ -177,13 +177,13 @@ const Enquiry: React.FC = () => {
                   Our team is available 24/7 to assist with group bookings or special requirements.
                 </p>
                 <div className="flex flex-col gap-4">
-                  <a href="tel:+918001234567" className="flex items-center gap-4 text-primary font-bold hover:translate-x-1 transition-transform">
+                  <a href="tel:+919306592069" className="flex items-center gap-4 text-primary font-bold hover:translate-x-1 transition-transform">
                     <span className="material-symbols-outlined font-bold">call</span>
-                    +91 800 123 4567
+                    +91 9306592069
                   </a>
-                  <a href="mailto:stay@vrindavanserenity.com" className="flex items-center gap-4 text-primary font-bold hover:translate-x-1 transition-transform">
+                  <a href="mailto:amanbhatiya153@gmail.com" className="flex items-center gap-4 text-primary font-bold hover:translate-x-1 transition-transform">
                     <span className="material-symbols-outlined font-bold">mail</span>
-                    Email Us
+                    amanbhatiya153@gmail.com
                   </a>
                 </div>
              </div>
