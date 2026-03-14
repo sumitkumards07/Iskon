@@ -58,7 +58,7 @@ const Rooms: React.FC = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                 />
                 {room.badge && (
-                  <div className="absolute top-4 left-4 bg-primary text-background-dark px-3 py-1 rounded-full text-[10px] font-black">
+                  <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-[10px] font-black">
                     {room.badge}
                   </div>
                 )}

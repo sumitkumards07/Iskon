@@ -79,7 +79,7 @@ const Location: React.FC = () => {
                  <motion.div 
                    animate={{ y: [0, -10, 0] }}
                    transition={{ repeat: Infinity, duration: 2 }}
-                   className="text-primary drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]"
+                   className="text-primary drop-shadow-[0_0_10px_rgba(160,29,35,0.5)]"
                  >
                    <span className="material-symbols-outlined text-6xl font-bold fill-1">location_on</span>
                  </motion.div>
