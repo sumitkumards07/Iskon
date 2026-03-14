@@ -68,9 +68,11 @@ const Footer: React.FC = () => {
       
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-primary/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
         <p>© 2024 Vrindavan Serenity Luxury Hotel. All spiritual rights reserved.</p>
-        <div className="flex gap-6">
-          <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+        <div className="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-2">
+          <Link to="/legal/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+          <Link to="/legal/terms-and-conditions" className="hover:text-primary transition-colors">Terms & Conditions</Link>
+          <Link to="/legal/refund-policy" className="hover:text-primary transition-colors">Refund Policy</Link>
+          <Link to="/legal/disclaimer" className="hover:text-primary transition-colors">Disclaimer</Link>
         </div>
       </div>
     </footer>

@@ -9,6 +9,7 @@ import LocationPage from './pages/Location';
 import Enquiry from './pages/Enquiry';
 import Experience from './pages/Experience';
 import BlogPost from './pages/BlogPost';
+import LegalPage from './pages/LegalPage';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -33,6 +34,7 @@ const App: React.FC = () => {
           <Route path="/enquiry" element={<Enquiry />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/experience/:slug" element={<BlogPost />} />
+          <Route path="/legal/:type" element={<LegalPage />} />
         </Routes>
       </Layout>
     </Router>
