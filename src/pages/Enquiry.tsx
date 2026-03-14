@@ -15,7 +15,21 @@ const Enquiry: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Thank you for your enquiry! Our concierge will contact you shortly.');
+    
+    // Construct WhatsApp message
+    const message = `*Divine Enquiry from ${formData.name}*%0A%0A` +
+      `*Room Type:* ${formData.roomType}%0A` +
+      `*Guests:* ${formData.guests}%0A` +
+      `*Check-in:* ${formData.checkIn}%0A` +
+      `*Check-out:* ${formData.checkOut}%0A` +
+      `*Phone:* ${formData.phone}%0A` +
+      `*Email:* ${formData.email}%0A%0A` +
+      `*Special Requests:* ${formData.requests || 'None'}`;
+
+    const whatsappUrl = `https://wa.me/919306592069?text=${message}`;
+    
+    // Redirect to WhatsApp
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
