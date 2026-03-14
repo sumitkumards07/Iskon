@@ -12,49 +12,34 @@ const Home: React.FC = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[85vh] w-full overflow-hidden">
+      <section className="relative h-[85vh] w-full overflow-hidden flex items-center justify-center pt-24 md:pt-32">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10s] hover:scale-105" 
           style={{ 
             backgroundImage: `linear-gradient(to bottom, rgba(26, 42, 78, 0.4), rgba(26, 42, 78, 0.8)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0wu8UPxxhh7IWuOt2lr2xnF9J_NqkpAQAR6yVzBKcwporSEeekyZ7C3mKu9Hc3L7n8maEv3KlBtfMLNN5kMYZXn4ilQGRn2ZAZ_b9KJFHYSnyx0UHIPvn9GWX3lesIl-jXEiT0fwgK-PGuUSgGM5Gaw09T9rDSXMC2C9ZWmnuWzNjt02dUn1Xv8_4VmzyqC8IRWVeGAsXlq8ECOov_W8fuwGXMRCPH3zWO66neS0z1Wu36ISteCvmjfBvfS7M7MnH51u0cxipRg")` 
           }}
         />
-        <div className="relative h-full max-w-7xl mx-auto px-6 flex flex-col items-center justify-center text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl md:text-7xl font-display font-medium text-white mb-6 leading-[1.1] mx-auto"
+            className="text-4xl md:text-7xl font-display font-medium text-white mb-10 leading-[1.1] mx-auto"
           >
-            Your Sanctuary in the Holy City:<br/>
-            <motion.span 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.8 }}
-              className="text-primary italic"
-            >
-              The Premier Luxury Hotel Near ISKCON Vrindavan
-            </motion.span>
+            The Premier Luxury Hotel Near <br className="hidden md:block"/> ISKCON Vrindavan
           </motion.h1>
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="max-w-4xl text-slate-200 text-lg md:text-xl font-light mb-10 leading-relaxed mx-auto font-body"
-          >
-            Wake up to the sacred chants of the Krishna Balaram Mandir. Experience unparalleled luxury and spiritual tranquility just 100 meters from ISKCON Vrindavan.
-          </motion.h2>
+          
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Link 
               to="/enquiry" 
-              className="px-10 py-5 bg-primary text-background-dark rounded-full font-bold text-lg hover:scale-105 transition-all shadow-2xl flex items-center gap-3 active:scale-95"
+              className="px-12 py-5 bg-primary text-background-dark rounded-full font-bold text-lg hover:scale-105 transition-all shadow-2xl flex items-center justify-center gap-3 active:scale-95"
             >
-              Reserve Your Serene Stay (Direct Booking Best Price)
+              Book Now
             </Link>
             <a 
               href="tel:9306592069" 
