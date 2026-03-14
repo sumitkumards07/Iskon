@@ -169,12 +169,11 @@ const Home: React.FC = () => {
                 <h4 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">{room.title}</h4>
                 <p className="text-slate-400 font-light line-clamp-2 mb-6">{room.desc}</p>
                 <Link 
-                  to={`/rooms/${room.id}`} 
-                  target="_blank"
+                  to={`/enquiry?room=${room.id}`} 
                   className="inline-flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all"
                 >
                   BOOK NOW
-                  <span className="material-symbols-outlined text-sm font-bold">open_in_new</span>
+                  <span className="material-symbols-outlined text-sm font-bold">arrow_forward</span>
                 </Link>
               </motion.div>
             ))}
