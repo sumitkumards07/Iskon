@@ -141,7 +141,7 @@ const Enquiry: React.FC = () => {
 
               <button 
                  type="submit"
-                 className="w-full h-16 bg-primary text-background-dark font-black text-lg rounded-2xl shadow-xl hover:shadow-primary/20 hover:scale-[1.01] active:scale-95 transition-all"
+                 className="w-full h-16 bg-primary text-white font-black text-lg rounded-2xl shadow-xl hover:shadow-primary/20 hover:scale-[1.01] active:scale-95 transition-all"
               >
                 SEND ENQUIRY
               </button>

@@ -54,7 +54,7 @@ const Home: React.FC = () => {
           >
             <Link 
               to="/rooms" 
-              className="bg-primary text-background-dark px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 hover:shadow-xl transition-all text-center"
+              className="px-10 py-5 bg-primary text-white rounded-full font-bold text-lg hover:scale-105 transition-all shadow-2xl flex items-center gap-3 active:scale-95"
             >
               Explore Rooms
             </Link>

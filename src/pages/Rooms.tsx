@@ -82,7 +82,7 @@ const Rooms: React.FC = () => {
                 </div>
                 <Link 
                   to="/enquiry" 
-                  className="w-full bg-primary text-background-dark py-3 rounded-xl font-bold text-center hover:brightness-110 transition-all shadow-md active:scale-95"
+                  className="w-full bg-primary text-white py-3 rounded-xl font-bold text-center hover:brightness-110 transition-all shadow-md active:scale-95"
                 >
                   BOOK NOW
                 </Link>
