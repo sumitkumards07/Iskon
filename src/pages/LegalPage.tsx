@@ -69,7 +69,7 @@ const LegalPage: React.FC = () => {
             Have questions about our policies? Contact our support team.
           </p>
           <a 
-            href="mailto:amanbhatiya153@gmail.com" 
+            href="mailto:sonianil9606@gmail.com" 
             className="inline-flex items-center gap-2 text-primary font-black text-xs uppercase tracking-widest hover:gap-3 transition-all"
           >
             Email Support

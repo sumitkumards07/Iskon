@@ -222,9 +222,9 @@ const Enquiry: React.FC = () => {
                     <span className="material-symbols-outlined font-bold">call</span>
                     +91 9306592069
                   </a>
-                  <a href="mailto:amanbhatiya153@gmail.com" className="flex items-center gap-4 text-primary font-bold hover:translate-x-1 transition-transform">
+                  <a href="mailto:sonianil9606@gmail.com" className="flex items-center gap-4 text-primary font-bold hover:translate-x-1 transition-transform">
                     <span className="material-symbols-outlined font-bold">mail</span>
-                    amanbhatiya153@gmail.com
+                    sonianil9606@gmail.com
                   </a>
                   <div className="flex items-start gap-4 text-slate-500 text-sm mt-2">
                     <span className="material-symbols-outlined text-primary font-bold">location_on</span>
