@@ -14,49 +14,41 @@ const Home: React.FC = () => {
           }}
         />
         <div className="relative h-full max-w-7xl mx-auto px-6 flex flex-col items-center justify-center text-center">
-          <motion.span 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-primary font-bold tracking-[0.3em] uppercase text-sm mb-4"
-          >
-            Divine Abode Awaits
-          </motion.span>
-          <motion.h2 
+          <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-5xl md:text-8xl font-display font-medium text-white mb-6 leading-[1.1]"
+            className="text-4xl md:text-7xl font-display font-medium text-white mb-6 leading-[1.1] mx-auto"
           >
-            Luxury Within The <br/>
+            Your Sanctuary in the Holy City:<br/>
             <motion.span 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
               className="text-primary italic"
             >
-              Temple's Embrace
+              The Premier Luxury Hotel Near ISKCON Vrindavan
             </motion.span>
-          </motion.h2>
-          <motion.p 
+          </motion.h1>
+          <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="max-w-2xl text-slate-200 text-lg md:text-xl font-light mb-10 leading-relaxed"
+            className="max-w-4xl text-slate-200 text-lg md:text-xl font-light mb-10 leading-relaxed mx-auto font-body"
           >
             Wake up to the sacred chants of the Krishna Balaram Mandir. Experience unparalleled luxury and spiritual tranquility just 100 meters from ISKCON Vrindavan.
-          </motion.p>
+          </motion.h2>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Link 
-              to="/rooms" 
-              className="px-10 py-5 bg-primary text-white rounded-full font-bold text-lg hover:scale-105 transition-all shadow-2xl flex items-center gap-3 active:scale-95"
+              to="/enquiry" 
+              className="px-10 py-5 bg-primary text-background-dark rounded-full font-bold text-lg hover:scale-105 transition-all shadow-2xl flex items-center gap-3 active:scale-95"
             >
-              Explore Rooms
+              Reserve Your Serene Stay (Direct Booking Best Price)
             </Link>
             <button className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">
               Watch the Serenity
@@ -129,7 +121,7 @@ const Home: React.FC = () => {
             {[
               {
                 id: 'ac-2-bed',
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuByWC2ZHoI6gTvtBAA0RaiwhIPqlhebSYKsZC_MGJpISiL7mYEsgwoi6dn2MqtIS79lVB-K2XUGcJ46Ze-0q_DIFT3dZMkJKXD2EEwRLx6qjCWFhvW3SF1qNlpI0A6v64mU-A9alWV2YcR_2-4Lfl87cx6hJwY9QSCnhpcMW0GaZtas2zbEU5jHSB1JST7SRTtCj_zTWEck_mloi7VNSfotEkD1ABPCPtVmSKnvO6h0LkNVmC7c2Il6L2zdXQjjGjGO0AOKkpp8vg",
+                img: "/Users/sumitkumar/.gemini/antigravity/brain/bd70b53b-5cef-4c54-8851-2228c9fd8f16/premium_room_1650_1773497271908.png",
                 title: "Ac Room 2 bed",
                 price: "₹1,650",
                 desc: "Compact and comfortable with 2 beds and full AC, ideal for travelers."
