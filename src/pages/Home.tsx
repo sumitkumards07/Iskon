@@ -167,23 +167,23 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBXPZB4H5vBRLlms6oOcCOKh-6HFML7b1MReDRlbmWuZQGuVabo2ASL3enbjGbi1QAdVoCFem1b_Of4p4CEP6m-RbTFTBHznzkd5FJRHjHFbbUK5NuV61umUprRlz_fTp0EJa7SeOGpNBbJdAdtZ2MRL-k1KV0C1aQZrKR98Gy1EhHdk2cIckEala_KKUVppFU5M7v7AFcVNZrXP9j_iOJZrSkfx-_lPE_QpUAJuPCDGnn5WKkPxL0ApM2zn2vmyg1JHV7ORPTJSw",
-                title: "Temple View Premier",
-                price: "₹8,500",
-                desc: "Enjoy panoramic views of the ISKCON domes and morning sunrises from your private balcony.",
-                badge: "POPULAR"
+                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuByWC2ZHoI6gTvtBAA0RaiwhIPqlhebSYKsZC_MGJpISiL7mYEsgwoi6dn2MqtIS79lVB-K2XUGcJ46Ze-0q_DIFT3dZMkJKXD2EEwRLx6qjCWFhvW3SF1qNlpI0A6v64mU-A9alWV2YcR_2-4Lfl87cx6hJwY9QSCnhpcMW0GaZtas2zbEU5jHSB1JST7SRTtCj_zTWEck_mloi7VNSfotEkD1ABPCPtVmSKnvO6h0LkNVmC7c2Il6L2zdXQjjGjGO0AOKkpp8vg",
+                title: "Ac Room 2 bed",
+                price: "₹1,650",
+                desc: "Compact and comfortable with 2 beds and full AC, ideal for travelers."
               },
               {
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBR9lqzdz--JiOFXTDuUMoA4PWDv3MMG8-F9dN4yQHu9NkjC64H963hGQggI5KY_maQJtbVzBj4i2Mw-hNF_5QYjkonpQbxvu0lkoP5WbbwSXayCcj6lKspVEpR4ucXwe7N5ZC2-mhBgKvkxKp5sj209PfGszRJV9ruqRHUqqUeB_F7D-oY88gCxJLOKiw61t19frBls519xZ55N-e1yFOb-AYL91t-K3S8TCQ6I4KA2YyLalyrJLwQG0RCqz9sjVVdQwhTgzYtMg",
-                title: "Radha Rani Suite",
-                price: "₹12,000",
-                desc: "Our most spacious offering, featuring a separate meditation area and luxury bath amenities."
+                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBSF99jH2rl5elqmoOOHVkD4UVnLKiWlGCWG21zz5yn2amweXaL8U13gK6SuZDw7WsLC_rYajUWgAIfTb9stX8X39vVkKMZadZXxQ3Oq8ApzetCEwe7Dpnw5-xjYff0kUGaiu71ThIcZNyQc8EVMdDkrjTnZuMp-pLYQRa0QH7OxI7m8bdKCgVP-OJtC0M3yCRSki2vBu1oAaHECDDdGVAvbuk5XL4QTkMdJQ6UXKiXRFkrAgTs1drTRLowbOgHly-PcRUXVl6sGA",
+                title: "Best Room",
+                price: "₹2,445",
+                desc: "Our premium offering with the best views and comfort.",
+                badge: "TOP CHOICE"
               },
               {
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB1PufRhpby71S2GSfNh5wuZVtur3RVm-GvqKx2-m-ADEwZ0yHaEcoO5Psdw1unSUUsKdUP9AoU7bdpVO05FUhEA9JLAo1IzQXuXbRlJCLtWEYzlY0xlq5oeiVV1Y55TJgfreR4ynIdDinS9UeAqj0tHK4rz042vlvEgVe1qhHtEKvCBcvxAMZgs0nuKQ-B1vtpsv54z6Vp8XxaN0KSA60ukoXAW20pA0DX7kov1EcYikptOtAr-hUNctl5Aym_YR1cb_Leg-gK4Q",
-                title: "Serenity Deluxe",
-                price: "₹6,000",
-                desc: "A perfect blend of modern comfort and spiritual aesthetics for the solo traveler or couple."
+                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC9fHE0kAT7kqAbJZiOo9IVoy0ZLk_K1SDrU_WwqX5vhhloRsWn2-i0HhfsAqdxwL1_hMwPvXoYKzEHX1VM_CN2BEGSGD3kETqO4GzqVBwti4qyS3fsMhCt9u-zd3rgs7BbREqwntMkJfUjdrT6-Y6pm7LmloAQO7UH4I8x7m_iTb9NO_vFNGUS1RpV3GwZAipANERGb8KoTDq96dXkm_2F8YMn1fE6BQKeg7xX9hyirCXgZbsZUbDV0rDsnP-Y2I7eQ878EiQKHw",
+                title: "Ac room 3 bed",
+                price: "₹2,050",
+                desc: "Spacious room with 3 beds, perfect for groups."
               }
             ].map((room, idx) => (
               <motion.div 
