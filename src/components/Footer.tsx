@@ -56,13 +56,6 @@ const Footer: React.FC = () => {
           <p className="text-xs text-slate-500 leading-relaxed italic border-l-2 border-primary pl-4">
             "Vrindavan is not just a place, it's a state of consciousness. We help you experience that divinity in comfort."
           </p>
-          <div className="mt-8">
-             <img 
-               src="https://via.placeholder.com/150x60?text=Trusted+by+Travelers" 
-               alt="Trust Badge" 
-               className="opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer"
-             />
-          </div>
         </div>
       </div>
       

@@ -1,10 +1,14 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Testimonials from '../components/Testimonials';
 import FloatingActions from '../components/FloatingActions';
 
 const Home: React.FC = () => {
+  const [adults, setAdults] = useState(2);
+  const [children, setChildren] = useState(0);
+  const [showCounter, setShowCounter] = useState(false);
+
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -95,12 +99,80 @@ const Home: React.FC = () => {
             <div className="flex flex-col gap-2">
               <label className="text-xs font-bold text-slate-500 uppercase tracking-widest px-1">Guests</label>
               <div className="relative">
-                <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary font-bold">group</span>
-                <select className="w-full pl-10 pr-4 py-3 rounded-xl border-slate-200 bg-background-light text-sm focus:ring-primary focus:border-primary appearance-none">
-                  <option>2 Adults, 0 Children</option>
-                  <option>1 Adult</option>
-                  <option>2 Adults, 1 Child</option>
-                </select>
+                <div 
+                  onClick={() => setShowCounter(!showCounter)}
+                  className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 bg-background-light text-sm focus:ring-primary focus:border-primary cursor-pointer flex justify-between items-center"
+                >
+                  <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary font-bold pointer-events-none">group</span>
+                  <span className="text-slate-600 truncate">
+                    {adults} Adult{adults > 1 ? 's' : ''}, {children} Child{children !== 1 ? 'ren' : ''}
+                  </span>
+                  <span className="material-symbols-outlined text-slate-400 text-sm transition-transform duration-300" style={{ transform: showCounter ? 'rotate(180deg)' : 'none' }}>
+                    keyboard_arrow_down
+                  </span>
+                </div>
+
+                <AnimatePresence>
+                  {showCounter && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                      className="absolute top-full left-0 right-0 mt-2 p-6 bg-white rounded-2xl shadow-2xl border border-primary/10 z-50 flex flex-col gap-6"
+                    >
+                      <div className="flex justify-between items-center">
+                        <div>
+                          <p className="font-bold text-background-dark">Adults</p>
+                          <p className="text-[10px] text-slate-400 uppercase tracking-widest">Ages 13+</p>
+                        </div>
+                        <div className="flex items-center gap-4">
+                          <button 
+                            onClick={() => setAdults(Math.max(1, adults - 1))}
+                            className="size-8 rounded-lg border border-primary/20 flex items-center justify-center text-primary hover:bg-primary/10 transition-colors"
+                          >
+                            <span className="material-symbols-outlined text-sm font-bold">remove</span>
+                          </button>
+                          <span className="w-4 text-center font-bold text-background-dark">{adults}</span>
+                          <button 
+                            onClick={() => setAdults(adults + 1)}
+                            className="size-8 rounded-lg border border-primary/20 flex items-center justify-center text-primary hover:bg-primary/10 transition-colors"
+                          >
+                            <span className="material-symbols-outlined text-sm font-bold">add</span>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className="flex justify-between items-center">
+                        <div>
+                          <p className="font-bold text-background-dark">Children</p>
+                          <p className="text-[10px] text-slate-400 uppercase tracking-widest">Ages 0-12</p>
+                        </div>
+                        <div className="flex items-center gap-4">
+                          <button 
+                            onClick={() => setChildren(Math.max(0, children - 1))}
+                            className="size-8 rounded-lg border border-primary/20 flex items-center justify-center text-primary hover:bg-primary/10 transition-colors"
+                          >
+                            <span className="material-symbols-outlined text-sm font-bold">remove</span>
+                          </button>
+                          <span className="w-4 text-center font-bold text-background-dark">{children}</span>
+                          <button 
+                            onClick={() => setChildren(children + 1)}
+                            className="size-8 rounded-lg border border-primary/20 flex items-center justify-center text-primary hover:bg-primary/10 transition-colors"
+                          >
+                            <span className="material-symbols-outlined text-sm font-bold">add</span>
+                          </button>
+                        </div>
+                      </div>
+
+                      <button 
+                        onClick={() => setShowCounter(false)}
+                        className="w-full py-2 bg-primary/10 text-primary rounded-lg text-xs font-black uppercase tracking-widest hover:bg-primary hover:text-white transition-all"
+                      >
+                        Done
+                      </button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </div>
             <button className="w-full bg-primary text-background-dark h-[50px] rounded-xl font-black text-sm tracking-widest flex items-center justify-center gap-2 hover:brightness-105 hover:scale-[1.02] transition-all shadow-lg">
