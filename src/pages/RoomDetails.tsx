@@ -10,7 +10,7 @@ const RoomDetails: React.FC = () => {
       id: 'ac-2-bed',
       title: "Ac Room 2 bed",
       price: "₹1,650",
-      img: "/Users/sumitkumar/.gemini/antigravity/brain/bd70b53b-5cef-4c54-8851-2228c9fd8f16/premium_room_1650_1773497271908.png",
+      img: "/rooms/premium_room_1650.png",
       desc: "Compact and comfortable with 2 beds and full AC, ideal for travelers.",
       longDesc: "Experience the perfect blend of simplicity and comfort. Our AC 2-bed rooms are designed for the modern pilgrim who values cleanliness, comfort, and peace. Each room is equipped with high-quality linens, adjustable air conditioning, and a serene atmosphere that complements your spiritual journey in Vrindavan.",
       amenities: ['2 Beds', 'AC', 'WiFi', 'TV', 'Hot Water', 'Daily Housekeeping']

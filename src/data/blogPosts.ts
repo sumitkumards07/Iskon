@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     author: 'Vrindavan Serenity Concierge',
     category: 'Spiritual Guide',
     excerpt: 'Attending the Mangala Aarti at the Krishna Balaram Mandir is a profoundly moving experience. Learn the timings, tips, and how to prepare.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD0wu8UPxxhh7IWuOt2lr2xnF9J_NqkpAQAR6yVzBKcwporSEeekyZ7C3mKu9Hc3L7n8maEv3KlBtfMLNN5kMYZXn4ilQGRn2ZAZ_b9KJFHYSnyx0UHIPvn9GWX3lesIl-jXEiT0fwgK-PGuUSgGM5Gaw09T9rDSXMC2C9ZWmnuWzNjt02dUn1Xv8_4VmzyqC8IRWVeGAsXlq8ECOov_W8fuwGXMRCPH3zWO66neS0z1Wu36ISteCvmjfBvfS7M7MnH51u0cxipRg',
+    image: "/rooms/premium_room_1650.png",
     keywords: ['ISKCON Vrindavan Mangala Aarti timings', 'attend Mangala Aarti Krishna Balaram Mandir', 'morning darshan Vrindavan'],
     content: `
 Attending the Mangala Aarti at the Krishna Balaram Mandir is a profoundly moving experience that draws thousands of devotees to Vrindavan every year. As the first aarti of the day, it is considered the most auspicious time to view the deities and begin your spiritual practice.
@@ -46,7 +46,7 @@ When you stay with us, you wake up to the sacred chants of the Krishna Balaram M
     author: 'Vrindavan Serenity Concierge',
     category: 'Travel Itinerary',
     excerpt: 'Vrindavan is a city of over 5,000 temples. Follow our perfectly balanced 48-hour itinerary to experience the most sacred sites.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCyWC2ZHoI6gTvtBAA0RaiwhIPqlhebSYKsZC_MGJpISiL7mYEsgwoi6dn2MqtIS79lVB-K2XUGcJ46Ze-0q_DIFT3dZMkJKXD2EEwRLx6qjCWFhvW3SF1qNlpI0A6v64mU-A9alWV2YcR_2-4Lfl87cx6hJwY9QSCnhpcMW0GaZtas2zbEU5jHSB1JST7SRTtCj_zTWEck_mloi7VNSfotEkD1ABPCPtVmSKnvO6h0LkNVmC7c2Il6L2zdXQjjGjGO0AOKkpp8vg',
+    image: "/blog/itinerary.png",
     keywords: ['Vrindavan 2 day itinerary', 'places to visit near ISKCON Vrindavan', 'Mathura Vrindavan weekend trip'],
     content: `
 Vrindavan is a city of over 5,000 temples. For first-time visitors or those coming for a short weekend retreat, figuring out how to balance spiritual immersion with peaceful rest can be overwhelming. Here is a perfectly balanced 48-hour itinerary that covers the most sacred sites without the burnout.
@@ -72,7 +72,7 @@ Location is everything in Vrindavan. Staying at a property just 100 meters from 
     author: 'Vrindavan Serenity Travel Expert',
     category: 'Travel Tips',
     excerpt: 'Packing for a pilgrimage to Braj Bhoomi requires a slightly different approach. Comfort, modesty, and practicality are keys.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCyWC2ZHoI6gTvtBAA0RaiwhIPqlhebSYKsZC_MGJpISiL7mYEsgwoi6dn2MqtIS79lVB-K2XUGcJ46Ze-0q_DIFT3dZMkJKXD2EEwRLx6qjCWFhvW3SF1qNlpI0A6v64mU-A9alWV2YcR_2-4Lfl87cx6hJwY9QSCnhpcMW0GaZtas2zbEU5jHSB1JST7SRTtCj_zTWEck_mloi7VNSfotEkD1ABPCPtVmSKnvO6h0LkNVmC7c2Il6L2zdXQjjGjGO0AOKkpp8vg',
+    image: "/blog/packing.png",
     keywords: ['what to wear in Vrindavan', 'packing list for Vrindavan temples', 'NRI travel tips Braj'],
     content: `
 Packing for a pilgrimage to Braj Bhoomi requires a slightly different approach than a standard vacation. Comfort, modesty, and practicality are the keys to a stress-free trip. Here is exactly what you need to bring to ensure your focus remains on your spiritual journey.
@@ -103,7 +103,7 @@ The most important decisions you make is where you unpack. The dust and crowds o
     author: 'Vrindavan Serenity Concierge',
     category: 'Dining',
     excerpt: 'For NRIs and travelers with sensitive stomachs, finding hygienic, high-quality food is a top priority during their yatra.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCyWC2ZHoI6gTvtBAA0RaiwhIPqlhebSYKsZC_MGJpISiL7mYEsgwoi6dn2MqtIS79lVB-K2XUGcJ46Ze-0q_DIFT3dZMkJKXD2EEwRLx6qjCWFhvW3SF1qNlpI0A6v64mU-A9alWV2YcR_2-4Lfl87cx6hJwY9QSCnhpcMW0GaZtas2zbEU5jHSB1JST7SRTtCj_zTWEck_mloi7VNSfotEkD1ABPCPtVmSKnvO6h0LkNVmC7c2Il6L2zdXQjjGjGO0AOKkpp8vg',
+    image: "/blog/dining.png",
     keywords: ['pure veg restaurants near ISKCON Vrindavan', 'Govindas restaurant Krishna Balaram Mandir', 'safe food in Vrindavan', 'hygienic dining Braj'],
     content: `
 Vrindavan offers a rich culinary experience, famous for its pedas, lassis, and pure vegetarian thalis. However, for NRIs and travelers with sensitive stomachs, finding hygienic, high-quality food is a top priority during their yatra.
@@ -125,7 +125,7 @@ When you stay just 100 meters from ISKCON Vrindavan, Govinda's Restaurant and th
     author: 'Vrindavan Serenity Concierge',
     category: 'Family Travel',
     excerpt: 'Bringing your parents or grandparents to Vrindavan is double act of devotion. Planning ahead is essential for their comfort.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCyWC2ZHoI6gTvtBAA0RaiwhIPqlhebSYKsZC_MGJpISiL7mYEsgwoi6dn2MqtIS79lVB-K2XUGcJ46Ze-0q_DIFT3dZMkJKXD2EEwRLx6qjCWFhvW3SF1qNlpI0A6v64mU-A9alWV2YcR_2-4Lfl87cx6hJwY9QSCnhpcMW0GaZtas2zbEU5jHSB1JST7SRTtCj_zTWEck_mloi7VNSfotEkD1ABPCPtVmSKnvO6h0LkNVmC7c2Il6L2zdXQjjGjGO0AOKkpp8vg',
+    image: "/blog/senior.png",
     keywords: ['elderly friendly hotels in Vrindavan', 'wheelchair accessible stay ISKCON Vrindavan', 'taking parents to Vrindavan', 'comfortable yatra Braj'],
     content: `
 Bringing your parents or grandparents to Vrindavan is a beautiful act of devotion. However, the crowded streets, uneven walking paths, and intense weather can be physically exhausting for senior citizens. Planning ahead is essential to ensure their trip is joyous, not draining.
@@ -146,7 +146,7 @@ Give your parents the gift of comfort. Our property is located exactly 100 meter
     author: 'Vrindavan Serenity Travel Consultant',
     category: 'Pilgrimage',
     excerpt: 'Walking the Vrindavan Parikrama is one of the most spiritually rewarding activities. Learn the route and preparation tips.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCyWC2ZHoI6gTvtBAA0RaiwhIPqlhebSYKsZC_MGJpISiL7mYEsgwoi6dn2MqtIS79lVB-K2XUGcJ46Ze-0q_DIFT3dZMkJKXD2EEwRLx6qjCWFhvW3SF1qNlpI0A6v64mU-A9alWV2YcR_2-4Lfl87cx6hJwY9QSCnhpcMW0GaZtas2zbEU5jHSB1JST7SRTtCj_zTWEck_mloi7VNSfotEkD1ABPCPtVmSKnvO6h0LkNVmC7c2Il6L2zdXQjjGjGO0AOKkpp8vg',
+    image: "/blog/itinerary.png",
     keywords: ['Vrindavan parikrama route map', 'parikrama distance and time', 'starting point ISKCON Vrindavan', 'barefoot parikrama tips'],
     content: `
 Walking the Vrindavan Parikrama—circumambulating the sacred town—is one of the most spiritually rewarding activities you can perform in Braj Bhoomi. Whether you walk barefoot or in comfortable sandals, it is a journey of devotion.
@@ -168,7 +168,7 @@ Completing the 11km walk is physically demanding. The last thing you want to do 
     author: 'Vrindavan Serenity Concierge',
     category: 'Event Guide',
     excerpt: 'Vrindavan is a town in constant state of celebration. Knowing when to visit is the secret to a perfect yatra.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCyWC2ZHoI6gTvtBAA0RaiwhIPqlhebSYKsZC_MGJpISiL7mYEsgwoi6dn2MqtIS79lVB-K2XUGcJ46Ze-0q_DIFT3dZMkJKXD2EEwRLx6qjCWFhvW3SF1qNlpI0A6v64mU-A9alWV2YcR_2-4Lfl87cx6hJwY9QSCnhpcMW0GaZtas2zbEU5jHSB1JST7SRTtCj_zTWEck_mloi7VNSfotEkD1ABPCPtVmSKnvO6h0LkNVmC7c2Il6L2zdXQjjGjGO0AOKkpp8vg',
+    image: "/blog/itinerary.png",
     keywords: ['best time to visit Vrindavan', 'Kartik month stay in Vrindavan', 'Janmashtami hotel booking ISKCON', 'Vrindavan Holi dates'],
     content: `
 Vrindavan is a town in a constant state of celebration, but certain times of the year offer a truly magnified spiritual experience. Knowing when to visit—and booking well in advance—is the secret to a perfect yatra.
@@ -189,7 +189,7 @@ During Kartik, Holi, and Janmashtami, traffic restrictions are heavily enforced,
     author: 'Vrindavan Serenity Logistics',
     category: 'Travel Tips',
     excerpt: 'Vrindavan streets are full of history and devotion, but also traffic. Learn how to navigate the holy city safely.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCyWC2ZHoI6gTvtBAA0RaiwhIPqlhebSYKsZC_MGJpISiL7mYEsgwoi6dn2MqtIS79lVB-K2XUGcJ46Ze-0q_DIFT3dZMkJKXD2EEwRLx6qjCWFhvW3SF1qNlpI0A6v64mU-A9alWV2YcR_2-4Lfl87cx6hJwY9QSCnhpcMW0GaZtas2zbEU5jHSB1JST7SRTtCj_zTWEck_mloi7VNSfotEkD1ABPCPtVmSKnvO6h0LkNVmC7c2Il6L2zdXQjjGjGO0AOKkpp8vg',
+    image: "/blog/senior.png",
     keywords: ['parking near ISKCON Vrindavan', 'how to travel in Vrindavan', 'Delhi to Vrindavan by car', 'weekend trip to Vrindavan from NCR'],
     content: `
 Vrindavan's narrow, winding streets are full of history, devotion, and—inevitably—traffic jams. If you are driving down from Delhi NCR for a weekend trip, figuring out vehicle logistics is often the most stressful part of the journey.

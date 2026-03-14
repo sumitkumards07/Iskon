@@ -121,7 +121,7 @@ const Home: React.FC = () => {
             {[
               {
                 id: 'ac-2-bed',
-                img: "/Users/sumitkumar/.gemini/antigravity/brain/bd70b53b-5cef-4c54-8851-2228c9fd8f16/premium_room_1650_1773497271908.png",
+                img: "/rooms/premium_room_1650.png",
                 title: "Ac Room 2 bed",
                 price: "₹1,650",
                 desc: "Compact and comfortable with 2 beds and full AC, ideal for travelers."
