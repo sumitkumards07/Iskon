@@ -48,6 +48,8 @@ const Experience: React.FC = () => {
                 <img 
                   src={post.image} 
                   alt={post.title} 
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                 />
                 <div className="absolute top-6 left-6 px-4 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-[10px] font-black tracking-widest uppercase text-primary border border-primary/10">

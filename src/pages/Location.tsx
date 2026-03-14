@@ -92,10 +92,15 @@ const Location: React.FC = () => {
                  </span>
               </div>
               <div className="absolute bottom-10 inset-x-10">
-                <button className="w-full bg-white text-background-dark py-4 rounded-2xl font-black shadow-2xl hover:bg-primary transition-colors flex items-center justify-center gap-3">
+                <a 
+                  href="https://www.google.com/maps/dir/?api=1&destination=Krishna+Balaram+International+Guest+House,+Bhaktivedanta+Swami+Marg,+Raman+Reiti,+Vrindavan,+Uttar+Pradesh+281121"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-white text-background-dark py-4 rounded-2xl font-black shadow-2xl hover:bg-primary transition-colors flex items-center justify-center gap-3"
+                >
                   <span className="material-symbols-outlined font-bold">directions</span>
                   GET LIVE DIRECTIONS
-                </button>
+                </a>
               </div>
             </div>
           </div>

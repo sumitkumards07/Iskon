@@ -22,7 +22,7 @@ const Enquiry: React.FC = () => {
       const roomMap: Record<string, string> = {
         'ac-2-bed': 'Ac Room 2 bed',
         'best-room': 'Best Room',
-        'ac-3-bed': 'Ac room 3 bed'
+        'ac-4-bed': 'Ac room 4 bed'
       };
       if (roomMap[room]) {
         setFormData(prev => ({ ...prev, roomType: roomMap[room] }));
@@ -126,7 +126,7 @@ const Enquiry: React.FC = () => {
                     >
                       <option>Ac Room 2 bed</option>
                       <option>Best Room</option>
-                      <option>Ac room 3 bed</option>
+                      <option>Ac room 4 bed</option>
                     </select>
                   </div>
                   <div className="flex flex-col gap-2">

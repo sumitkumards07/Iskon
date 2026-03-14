@@ -198,11 +198,11 @@ const Home: React.FC = () => {
                 badge: "TOP CHOICE"
               },
               {
-                id: 'ac-3-bed',
+                id: 'ac-4-bed',
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC9fHE0kAT7kqAbJZiOo9IVoy0ZLk_K1SDrU_WwqX5vhhloRsWn2-i0HhfsAqdxwL1_hMwPvXoYKzEHX1VM_CN2BEGSGD3kETqO4GzqVBwti4qyS3fsMhCt9u-zd3rgs7BbREqwntMkJfUjdrT6-Y6pm7LmloAQO7UH4I8x7m_iTb9NO_vFNGUS1RpV3GwZAipANERGb8KoTDq96dXkm_2F8YMn1fE6BQKeg7xX9hyirCXgZbsZUbDV0rDsnP-Y2I7eQ878EiQKHw",
-                title: "Ac room 3 bed",
-                price: "₹2,050",
-                desc: "Spacious room with 3 beds, perfect for groups."
+                title: "Ac room 4 bed",
+                price: "₹2,500",
+                desc: "Spacious room with 4 beds, perfect for groups."
               }
             ].map((room, idx) => (
               <motion.div 
@@ -211,7 +211,13 @@ const Home: React.FC = () => {
                 className="group cursor-pointer"
               >
                 <div className="relative aspect-[4/5] rounded-3xl overflow-hidden mb-6">
-                  <img src={room.img} alt={room.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img 
+                    src={room.img} 
+                    alt={room.title} 
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                  />
                   {room.badge && (
                     <div className="absolute top-6 left-6 bg-primary text-background-dark px-4 py-1.5 rounded-full text-xs font-black shadow-lg">
                       {room.badge}

@@ -26,13 +26,13 @@ const RoomDetails: React.FC = () => {
       badge: 'TOP CHOICE'
     },
     {
-      id: 'ac-3-bed',
-      title: "Ac room 3 bed",
-      price: "₹2,050",
+      id: 'ac-4-bed',
+      title: "Ac room 4 bed",
+      price: "₹2,500",
       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC9fHE0kAT7kqAbJZiOo9IVoy0ZLk_K1SDrU_WwqX5vhhloRsWn2-i0HhfsAqdxwL1_hMwPvXoYKzEHX1VM_CN2BEGSGD3kETqO4GzqVBwti4qyS3fsMhCt9u-zd3rgs7BbREqwntMkJfUjdrT6-Y6pm7LmloAQO7UH4I8x7m_iTb9NO_vFNGUS1RpV3GwZAipANERGb8KoTDq96dXkm_2F8YMn1fE6BQKeg7xX9hyirCXgZbsZUbDV0rDsnP-Y2I7eQ878EiQKHw",
-      desc: "Spacious room with 3 beds, perfect for groups.",
-      longDesc: "Ideal for families or groups of pilgrims, our AC 3-bed room offers ample space and comfort for everyone. Maintain the collective spirit of your pilgrimage without compromising on luxury. The room features three comfortable beds, integrated storage, and a layout that promotes shared spiritual practice and rest.",
-      amenities: ['3 Beds', 'AC', 'WiFi', 'TV', 'Hot Water', 'Extra Storage']
+      desc: "Spacious room with 4 beds, perfect for groups.",
+      longDesc: "Ideal for families or groups of pilgrims, our AC 4-bed room offers ample space and comfort for everyone. Maintain the collective spirit of your pilgrimage without compromising on luxury. The room features four comfortable beds, integrated storage, and a layout that promotes shared spiritual practice and rest.",
+      amenities: ['4 Beds', 'AC', 'WiFi', 'TV', 'Hot Water', 'Extra Storage']
     }
   ];
 
