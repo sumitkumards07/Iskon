@@ -6,7 +6,7 @@ const Enquiry: React.FC = () => {
     name: '',
     email: '',
     phone: '',
-    roomType: 'Deluxe Heritage Room',
+    roomType: 'Ac Room 2 bed',
     guests: 2,
     checkIn: '',
     checkOut: '',
@@ -93,10 +93,6 @@ const Enquiry: React.FC = () => {
                       value={formData.roomType}
                       onChange={(e) => setFormData({...formData, roomType: e.target.value})}
                     >
-                      <option>Heritage Deluxe Room</option>
-                      <option>Executive Suite</option>
-                      <option>Temple View Premium</option>
-                      <option>Radha Rani Suite</option>
                       <option>Ac Room 2 bed</option>
                       <option>Best Room</option>
                       <option>Ac room 3 bed</option>

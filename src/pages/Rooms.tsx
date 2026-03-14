@@ -5,40 +5,6 @@ import { Link } from 'react-router-dom';
 const Rooms: React.FC = () => {
   const rooms = [
     {
-      id: 'temple-view',
-      title: "Temple View Premier",
-      price: "₹8,500",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBXPZB4H5vBRLlms6oOcCOKh-6HFML7b1MReDRlbmWuZQGuVabo2ASL3enbjGbi1QAdVoCFem1b_Of4p4CEP6m-RbTFTBHznzkd5FJRHjHFbbUK5NuV61umUprRlz_fTp0EJa7SeOGpNBbJdAdtZ2MRL-k1KV0C1aQZrKR98Gy1EhHdk2cIckEala_KKUVppFU5M7v7AFcVNZrXP9j_iOJZrSkfx-_lPE_QpUAJuPCDGnn5WKkPxL0ApM2zn2vmyg1JHV7ORPTJSw",
-      desc: "Enjoy panoramic views of the ISKCON domes and morning sunrises from your private balcony.",
-      amenities: ['Temple View', 'AC', 'Wifi', 'King Bed'],
-      badge: 'TOP CHOICE'
-    },
-    {
-      id: 'radha-rani',
-      title: "Radha Rani Suite",
-      price: "₹12,000",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBR9lqzdz--JiOFXTDuUMoA4PWDv3MMG8-F9dN4yQHu9NkjC64H963hGQggI5KY_maQJtbVzBj4i2Mw-hNF_5QYjkonpQbxvu0lkoP5WbbwSXayCcj6lKspVEpR4ucXwe7N5ZC2-mhBgKvkxKp5sj209PfGszRJV9ruqRHUqqUeB_F7D-oY88gCxJLOKiw61t19frBls519xZ55N-e1yFOb-AYL91t-K3S8TCQ6I4KA2YyLalyrJLwQG0RCqz9sjVVdQwhTgzYtMg",
-      desc: "Our most spacious offering, featuring a separate meditation area and luxury bath amenities.",
-      amenities: ['Meditation Space', 'AC', 'Wifi', 'Premium Bath'],
-      badge: 'LUXURY'
-    },
-    {
-      id: 'serenity-deluxe',
-      title: "Serenity Deluxe",
-      price: "₹6,000",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB1PufRhpby71S2GSfNh5wuZVtur3RVm-GvqKx2-m-ADEwZ0yHaEcoO5Psdw1unSUUsKdUP9AoU7bdpVO05FUhEA9JLAo1IzQXuXbRlJCLtWEYzlY0xlq5oeiVV1Y55TJgfreR4ynIdDinS9UeAqj0tHK4rz042vlvEgVe1qhHtEKvCBcvxAMZgs0nuKQ-B1vtpsv54z6Vp8XxaN0KSA60ukoXAW20pA0DX7kov1EcYikptOtAr-hUNctl5Aym_YR1cb_Leg-gK4Q",
-      desc: "A perfect blend of modern comfort and spiritual aesthetics for the solo traveler or couple.",
-      amenities: ['AC', 'Wifi', 'City View', 'Queen Bed']
-    },
-    {
-      id: 'heritage-deluxe',
-      title: "Heritage Deluxe Room",
-      price: "₹4,500",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBsZ_KML2DW2DATFz2m7tlemgVfe5vE7QzliFjOMY8CwjoAVCFONhPXBTotQai5DxAq8gfGkDBNEkU0xMiTGnyPJvqhkLhOvndDMPyC4fAgb21eeBWlJEu1KPsCIkP88wjA978xvBaLOwUS6A3cxoI6X8cr-Hz2J4otq5wLkA4GnIfD8h061yiDSNDKCzuz-lNCbCijfVorhyJFb20WY1Hp-LL74iEh8YjE2NNlGM5R-UfHMAqdvwxBBYeG_dOpItAjqbd37UfKgw",
-      desc: "Comfortable space with traditional decor, perfect for a peaceful stay.",
-      amenities: ['AC', 'Wifi', 'Traditional Decor']
-    },
-    {
       id: 'ac-2-bed',
       title: "Ac Room 2 bed",
       price: "₹1,650",
