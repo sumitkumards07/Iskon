@@ -7,6 +7,8 @@ import Rooms from './pages/Rooms';
 import RoomDetails from './pages/RoomDetails';
 import LocationPage from './pages/Location';
 import Enquiry from './pages/Enquiry';
+import Experience from './pages/Experience';
+import BlogPost from './pages/BlogPost';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -29,6 +31,8 @@ const App: React.FC = () => {
           <Route path="/rooms/:id" element={<RoomDetails />} />
           <Route path="/location" element={<LocationPage />} />
           <Route path="/enquiry" element={<Enquiry />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/experience/:slug" element={<BlogPost />} />
         </Routes>
       </Layout>
     </Router>
