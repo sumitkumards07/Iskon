@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +26,8 @@ const Navbar: React.FC = () => {
   return (
     <header 
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-background-light/80 backdrop-blur-md h-16 shadow-md border-b border-primary/10' 
+        (isScrolled || !isHome)
+          ? 'bg-background-dark h-16 shadow-md border-b border-primary/20' 
           : 'bg-transparent h-20'
       }`}
     >
@@ -35,7 +37,7 @@ const Navbar: React.FC = () => {
             <span className="material-symbols-outlined text-4xl">temple_hindu</span>
           </div>
           <div>
-            <h1 className={`text-2xl font-display font-medium leading-none tracking-tight transition-colors ${isScrolled ? 'text-background-dark' : 'text-white'}`}>
+            <h1 className={`text-2xl font-display font-medium leading-none tracking-tight transition-colors ${ (isScrolled || !isHome) ? 'text-white' : 'text-white'}`}>
               Vrindavan Serenity
             </h1>
             <p className="text-[10px] uppercase tracking-[0.2em] text-primary font-bold">LUXURY PILGRIMAGE</p>
@@ -48,7 +50,7 @@ const Navbar: React.FC = () => {
             <Link 
               key={link.name} 
               to={link.path} 
-              className={`text-sm font-medium hover:text-primary transition-colors ${isScrolled ? 'text-slate-900' : 'text-white/90'}`}
+              className={`text-sm font-medium hover:text-primary transition-colors ${ (isScrolled || !isHome) ? 'text-white/90' : 'text-white/90'}`}
             >
               {link.name}
             </Link>
