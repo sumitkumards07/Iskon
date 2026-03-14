@@ -6,8 +6,8 @@
 @tailwind utilities;
 
 :root {
-  --primary: #A01D23;
-  --bg-light: #FFFFFF;
+  --primary: #d4af37;
+  --bg-light: #fdfcf0;
   --bg-dark: #1a2a4e;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button className="hidden sm:flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:brightness-110 hover:scale-105 transition-all shadow-lg active:scale-95">
+          <button className="hidden sm:flex items-center gap-2 bg-primary text-background-dark px-6 py-2.5 rounded-full font-bold text-sm hover:brightness-110 hover:scale-105 transition-all shadow-lg active:scale-95">
             <span>RESERVE NOW</span>
           </button>
           
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
                   {link.name}
                 </Link>
               ))}
-              <button className="w-full bg-primary text-white py-4 rounded-xl font-bold mt-2">
+              <button className="w-full bg-primary text-background-dark py-4 rounded-xl font-bold mt-2">
                 RESERVE NOW
               </button>
             </div>

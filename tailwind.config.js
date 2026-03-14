@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#A01D23", // Royal Crimson
-        "background-light": "#FFFFFF", // Pure White
+        primary: "#d4af37", // Premium Gold
+        "background-light": "#fdfcf0", // Pearl White
         "background-dark": "#1a2a4e", // Royal Navy
       },
       fontFamily: {

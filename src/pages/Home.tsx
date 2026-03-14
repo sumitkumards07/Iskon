@@ -20,7 +20,7 @@ const Home: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-primary font-bold tracking-[0.3em] uppercase text-sm mb-4"
           >
-            Royal Divine Abode Awaits
+            Divine Abode Awaits
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -105,7 +105,7 @@ const Home: React.FC = () => {
                 </select>
               </div>
             </div>
-            <button className="w-full bg-primary text-white h-[50px] rounded-xl font-black text-sm tracking-widest flex items-center justify-center gap-2 hover:brightness-105 hover:scale-[1.02] transition-all shadow-lg">
+            <button className="w-full bg-primary text-background-dark h-[50px] rounded-xl font-black text-sm tracking-widest flex items-center justify-center gap-2 hover:brightness-105 hover:scale-[1.02] transition-all shadow-lg">
               CHECK AVAILABILITY
               <span className="material-symbols-outlined font-bold">arrow_forward</span>
             </button>
@@ -155,7 +155,7 @@ const Home: React.FC = () => {
                 <div className="relative aspect-[4/5] rounded-3xl overflow-hidden mb-6">
                   <img src={room.img} alt={room.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   {room.badge && (
-                    <div className="absolute top-6 left-6 bg-primary text-white px-4 py-1.5 rounded-full text-xs font-black shadow-lg">
+                    <div className="absolute top-6 left-6 bg-primary text-background-dark px-4 py-1.5 rounded-full text-xs font-black shadow-lg">
                       {room.badge}
                     </div>
                   )}
@@ -200,7 +200,7 @@ const Home: React.FC = () => {
               whileHover={{ y: -10 }}
               className="flex flex-col items-center text-center p-8 rounded-3xl bg-primary/5 border border-primary/10 transition-shadow hover:shadow-xl group"
             >
-              <div className="size-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+              <div className="size-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors">
                 <span className="material-symbols-outlined text-4xl font-bold">{feature.icon}</span>
               </div>
               <h4 className="text-xl font-bold mb-4">{feature.title}</h4>
@@ -228,7 +228,7 @@ const Home: React.FC = () => {
                viewport={{ once: true }}
                className="absolute -bottom-8 -right-8 bg-primary p-10 rounded-3xl hidden md:block shadow-2xl"
             >
-              <div className="text-white">
+              <div className="text-background-dark">
                 <p className="text-5xl font-black mb-1">100m</p>
                 <p className="text-sm font-bold uppercase tracking-widest">To ISKCON Gate</p>
               </div>
