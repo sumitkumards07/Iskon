@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#A01D23", // Royal Crimson
-        "background-light": "#fdfcf0", // Pearl White
+        "background-light": "#FFFFFF", // Pure White
         "background-dark": "#1a2a4e", // Royal Navy
       },
       fontFamily: {
