@@ -13,14 +13,14 @@ const FloatingActions: React.FC = () => {
           href={`tel:${phoneNumber}`}
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="flex items-center gap-2 bg-white text-background-dark px-5 py-3 rounded-full shadow-2xl border border-primary/20 group transition-all"
+          whileHover={{ scale: 1.1, rotate: 5 }}
+          whileTap={{ scale: 0.9 }}
+          className="size-14 bg-white text-background-dark rounded-full shadow-2xl border border-primary/20 flex items-center justify-center group transition-all"
+          title="Call Now"
         >
-          <div className="size-8 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
-            <span className="material-symbols-outlined text-lg font-bold">call</span>
+          <div className="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+            <span className="material-symbols-outlined text-2xl font-bold">call</span>
           </div>
-          <span className="text-sm font-bold tracking-tight">Call Now</span>
         </motion.a>
 
         {/* WhatsApp Button */}
@@ -30,14 +30,14 @@ const FloatingActions: React.FC = () => {
           rel="noopener noreferrer"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="flex items-center gap-2 bg-white text-background-dark px-5 py-3 rounded-full shadow-2xl border border-primary/20 group transition-all"
+          whileHover={{ scale: 1.1, rotate: -5 }}
+          whileTap={{ scale: 0.9 }}
+          className="size-14 bg-white text-background-dark rounded-full shadow-2xl border border-primary/20 flex items-center justify-center group transition-all"
+          title="WhatsApp Us"
         >
-          <div className="size-8 rounded-full bg-green-500/10 flex items-center justify-center text-green-600 group-hover:bg-green-500 group-hover:text-white transition-colors">
-            <span className="material-symbols-outlined text-lg font-bold">chat</span>
+          <div className="size-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-600 group-hover:bg-green-500 group-hover:text-white transition-colors">
+            <span className="material-symbols-outlined text-2xl font-bold">chat</span>
           </div>
-          <span className="text-sm font-bold tracking-tight">WhatsApp</span>
         </motion.a>
       </div>
     </div>
