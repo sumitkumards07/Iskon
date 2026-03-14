@@ -91,7 +91,7 @@ const RoomDetails: React.FC = () => {
             </div>
 
             <Link 
-              to="/enquiry" 
+              to={`/enquiry?room=${room.id}`} 
               className="w-full h-16 bg-primary text-background-dark font-black text-lg rounded-2xl shadow-xl hover:shadow-primary/20 hover:scale-[1.01] active:scale-95 transition-all flex items-center justify-center gap-3"
             >
               <span className="material-symbols-outlined font-bold">event</span>

@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 const Enquiry: React.FC = () => {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,6 +14,21 @@ const Enquiry: React.FC = () => {
     checkOut: '',
     requests: ''
   });
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const room = params.get('room');
+    if (room) {
+      const roomMap: Record<string, string> = {
+        'ac-2-bed': 'Ac Room 2 bed',
+        'best-room': 'Best Room',
+        'ac-3-bed': 'Ac room 3 bed'
+      };
+      if (roomMap[room]) {
+        setFormData(prev => ({ ...prev, roomType: roomMap[room] }));
+      }
+    }
+  }, [location]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
