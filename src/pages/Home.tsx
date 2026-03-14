@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Testimonials from '../components/Testimonials';
+import FloatingActions from '../components/FloatingActions';
 
 const Home: React.FC = () => {
   return (
@@ -50,9 +52,13 @@ const Home: React.FC = () => {
             >
               Reserve Your Serene Stay (Direct Booking Best Price)
             </Link>
-            <button className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">
-              Watch the Serenity
-            </button>
+            <a 
+              href="tel:9306592069" 
+              className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center gap-2"
+            >
+              <span className="material-symbols-outlined text-primary font-bold">call</span>
+              Call Now
+            </a>
           </motion.div>
         </div>
       </section>
@@ -272,6 +278,9 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <Testimonials />
+
       {/* Inquiry CTA */}
       <section className="mb-24 px-6 pt-12">
         <motion.div 
@@ -300,6 +309,8 @@ const Home: React.FC = () => {
           </div>
         </motion.div>
       </section>
+      
+      <FloatingActions />
     </div>
   );
 };
