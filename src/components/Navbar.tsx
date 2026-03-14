@@ -19,7 +19,6 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Our Suites', path: '/rooms' },
     { name: 'Temple Proximity', path: '/location' },
-    { name: 'Sattvic Dining', path: '#' },
     { name: 'Experience', path: '#' },
   ];
 
