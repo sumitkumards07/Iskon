@@ -95,15 +95,15 @@ const Enquiry: React.FC = () => {
 
               {/* Booking Details */}
               <section className="bg-white p-8 rounded-[2rem] shadow-lg border border-primary/5">
-                <h3 className="text-xl font-display font-medium mb-6 flex items-center gap-2">
-                  <span className="material-symbols-outlined text-primary font-bold">meeting_room</span>
+                <h3 className="text-primary font-bold tracking-widest text-xs uppercase mb-8 flex items-center gap-2">
+                  <span className="size-2 rounded-full bg-primary animate-pulse" />
                   Stay Details
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
-                    <label className="text-xs font-bold uppercase tracking-widest text-slate-400 p-1">Room Type</label>
+                    <label className="text-xs font-bold uppercase tracking-widest text-slate-400 p-1">Select Room Type</label>
                     <select 
-                      className="w-full h-14 px-6 rounded-2xl bg-background-light border-none focus:ring-2 focus:ring-primary transition-all"
+                      className="w-full h-14 px-6 rounded-2xl bg-background-light border-none focus:ring-2 focus:ring-primary transition-all appearance-none"
                       value={formData.roomType}
                       onChange={(e) => setFormData({...formData, roomType: e.target.value})}
                     >
@@ -148,6 +148,16 @@ const Enquiry: React.FC = () => {
                       className="w-full h-14 px-6 rounded-2xl bg-background-light border-none focus:ring-2 focus:ring-primary transition-all"
                       value={formData.checkOut}
                       onChange={(e) => setFormData({...formData, checkOut: e.target.value})}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2 md:col-span-2">
+                    <label className="text-xs font-bold uppercase tracking-widest text-slate-400 p-1">Special Requests</label>
+                    <textarea 
+                      rows={3}
+                      className="w-full h-32 px-6 py-4 rounded-2xl bg-background-light border-none focus:ring-2 focus:ring-primary transition-all resize-none text-sm"
+                      placeholder="Any specific aarti times, dietary needs, or pick-up requirements?"
+                      value={formData.requests}
+                      onChange={(e) => setFormData({...formData, requests: e.target.value})}
                     />
                   </div>
                 </div>
