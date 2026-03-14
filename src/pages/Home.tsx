@@ -128,12 +128,14 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
+                id: 'ac-2-bed',
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuByWC2ZHoI6gTvtBAA0RaiwhIPqlhebSYKsZC_MGJpISiL7mYEsgwoi6dn2MqtIS79lVB-K2XUGcJ46Ze-0q_DIFT3dZMkJKXD2EEwRLx6qjCWFhvW3SF1qNlpI0A6v64mU-A9alWV2YcR_2-4Lfl87cx6hJwY9QSCnhpcMW0GaZtas2zbEU5jHSB1JST7SRTtCj_zTWEck_mloi7VNSfotEkD1ABPCPtVmSKnvO6h0LkNVmC7c2Il6L2zdXQjjGjGO0AOKkpp8vg",
                 title: "Ac Room 2 bed",
                 price: "₹1,650",
                 desc: "Compact and comfortable with 2 beds and full AC, ideal for travelers."
               },
               {
+                id: 'best-room',
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBSF99jH2rl5elqmoOOHVkD4UVnLKiWlGCWG21zz5yn2amweXaL8U13gK6SuZDw7WsLC_rYajUWgAIfTb9stX8X39vVkKMZadZXxQ3Oq8ApzetCEwe7Dpnw5-xjYff0kUGaiu71ThIcZNyQc8EVMdDkrjTnZuMp-pLYQRa0QH7OxI7m8bdKCgVP-OJtC0M3yCRSki2vBu1oAaHECDDdGVAvbuk5XL4QTkMdJQ6UXKiXRFkrAgTs1drTRLowbOgHly-PcRUXVl6sGA",
                 title: "Best Room",
                 price: "₹2,445",
@@ -141,6 +143,7 @@ const Home: React.FC = () => {
                 badge: "TOP CHOICE"
               },
               {
+                id: 'ac-3-bed',
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC9fHE0kAT7kqAbJZiOo9IVoy0ZLk_K1SDrU_WwqX5vhhloRsWn2-i0HhfsAqdxwL1_hMwPvXoYKzEHX1VM_CN2BEGSGD3kETqO4GzqVBwti4qyS3fsMhCt9u-zd3rgs7BbREqwntMkJfUjdrT6-Y6pm7LmloAQO7UH4I8x7m_iTb9NO_vFNGUS1RpV3GwZAipANERGb8KoTDq96dXkm_2F8YMn1fE6BQKeg7xX9hyirCXgZbsZUbDV0rDsnP-Y2I7eQ878EiQKHw",
                 title: "Ac room 3 bed",
                 price: "₹2,050",
@@ -164,7 +167,15 @@ const Home: React.FC = () => {
                   </div>
                 </div>
                 <h4 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">{room.title}</h4>
-                <p className="text-slate-400 font-light line-clamp-2">{room.desc}</p>
+                <p className="text-slate-400 font-light line-clamp-2 mb-6">{room.desc}</p>
+                <Link 
+                  to={`/rooms/${room.id}`} 
+                  target="_blank"
+                  className="inline-flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all"
+                >
+                  BOOK NOW
+                  <span className="material-symbols-outlined text-sm font-bold">open_in_new</span>
+                </Link>
               </motion.div>
             ))}
           </div>

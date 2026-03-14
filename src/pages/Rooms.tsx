@@ -81,7 +81,8 @@ const Rooms: React.FC = () => {
                   </div>
                 </div>
                 <Link 
-                  to="/enquiry" 
+                  to={`/rooms/${room.id}`} 
+                  target="_blank"
                   className="w-full bg-primary text-background-dark py-3 rounded-xl font-bold text-center hover:brightness-110 transition-all shadow-md active:scale-95"
                 >
                   BOOK NOW

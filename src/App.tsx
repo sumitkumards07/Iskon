@@ -4,6 +4,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Rooms from './pages/Rooms';
+import RoomDetails from './pages/RoomDetails';
 import LocationPage from './pages/Location';
 import Enquiry from './pages/Enquiry';
 
@@ -25,6 +26,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rooms" element={<Rooms />} />
+          <Route path="/rooms/:id" element={<RoomDetails />} />
           <Route path="/location" element={<LocationPage />} />
           <Route path="/enquiry" element={<Enquiry />} />
         </Routes>
