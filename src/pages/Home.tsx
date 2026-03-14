@@ -37,7 +37,7 @@ const Home: React.FC = () => {
           >
             <Link 
               to="/enquiry" 
-              className="px-12 py-5 bg-primary text-background-dark rounded-full font-bold text-lg hover:scale-105 transition-all shadow-2xl flex items-center justify-center gap-3 active:scale-95"
+              className="px-12 py-5 bg-primary text-background-dark rounded-2xl font-black text-lg uppercase tracking-widest hover:scale-105 transition-all shadow-2xl flex items-center justify-center gap-3 active:scale-95"
             >
               Book Now
             </Link>
