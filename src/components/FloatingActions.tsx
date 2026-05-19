@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const FloatingActions: React.FC = () => {
-  const phoneNumber = "9306592069";
-  const whatsappNumber = "919306592069";
+  const phoneNumber = "9202621544";
+  const whatsappNumber = "919202621544";
 
   return (
     <div className="fixed bottom-6 inset-x-0 z-50 pointer-events-none px-6">

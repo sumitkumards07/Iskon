@@ -43,7 +43,7 @@ const Enquiry: React.FC = () => {
       `*Email:* ${formData.email}%0A%0A` +
       `*Special Requests:* ${formData.requests || 'None'}`;
 
-    const whatsappUrl = `https://wa.me/919306592069?text=${message}`;
+    const whatsappUrl = `https://wa.me/919202621544?text=${message}`;
     
     // Redirect to WhatsApp
     window.open(whatsappUrl, '_blank');
@@ -101,7 +101,7 @@ const Enquiry: React.FC = () => {
                       <input 
                         required
                         className="flex-1 h-14 px-6 rounded-2xl bg-background-light border-none focus:ring-2 focus:ring-primary transition-all"
-                        placeholder="9306592069"
+                        placeholder="9202621544"
                         value={formData.phone}
                         onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       />
@@ -218,9 +218,9 @@ const Enquiry: React.FC = () => {
                   Our team is available 24/7 to assist with group bookings or special requirements.
                 </p>
                 <div className="flex flex-col gap-4">
-                  <a href="tel:+919306592069" className="flex items-center gap-4 text-primary font-bold hover:translate-x-1 transition-transform">
+                  <a href="tel:+919202621544" className="flex items-center gap-4 text-primary font-bold hover:translate-x-1 transition-transform">
                     <span className="material-symbols-outlined font-bold">call</span>
-                    +91 9306592069
+                    +91 9202621544
                   </a>
                   <a href="mailto:sonianil9606@gmail.com" className="flex items-center gap-4 text-primary font-bold hover:translate-x-1 transition-transform">
                     <span className="material-symbols-outlined font-bold">mail</span>

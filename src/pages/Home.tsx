@@ -42,7 +42,7 @@ const Home: React.FC = () => {
               Book Now
             </Link>
             <a 
-              href="tel:9306592069" 
+              href="tel:9202621544" 
               className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center gap-2"
             >
               <span className="material-symbols-outlined text-primary font-bold">call</span>

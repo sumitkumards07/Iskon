@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           <ul className="space-y-4 text-sm text-slate-500">
             <li className="flex gap-3">
               <span className="material-symbols-outlined text-primary text-sm font-bold">phone</span> 
-              +91 9306592069
+              +91 9202621544
             </li>
             <li className="flex gap-3">
               <span className="material-symbols-outlined text-primary text-sm font-bold">mail</span> 
