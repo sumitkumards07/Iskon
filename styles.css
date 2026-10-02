@@ -277,19 +277,20 @@ ul, ol {
   gap: var(--spacing-sm);
   text-align: center;
   white-space: nowrap;
-  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+  border-radius: var(--rounded-full);
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, opacity 0.2s ease, box-shadow 0.2s ease;
   user-select: none;
 }
 
-/* button-primary: #ff385c, 8px radius, 14x24px padding, 48px height, 16px / 500 */
+/* button-primary: #ff385c, pill radius, 14x28px padding, 48px height, 16px / 500 */
 .btn-primary {
   background-color: var(--colors-primary);
   color: var(--colors-on-primary);
   font-size: var(--font-button-md-size);
   font-weight: var(--font-button-md-weight);
   line-height: var(--font-button-md-line);
-  border-radius: var(--rounded-sm);
-  padding: 14px 24px;
+  border-radius: var(--rounded-full);
+  padding: 14px 28px;
   min-height: 48px;
   border: 1px solid transparent;
 }
@@ -308,15 +309,15 @@ ul, ol {
   cursor: not-allowed;
 }
 
-/* button-secondary: canvas fill, ink text, 1px ink border, 8px radius, 13x23px padding */
+/* button-secondary: canvas fill, ink text, 1px ink border, pill radius, 13x27px padding */
 .btn-secondary {
   background-color: var(--colors-canvas);
   color: var(--colors-ink);
   font-size: var(--font-button-md-size);
   font-weight: var(--font-button-md-weight);
   line-height: var(--font-button-md-line);
-  border-radius: var(--rounded-sm);
-  padding: 13px 23px;
+  border-radius: var(--rounded-full);
+  padding: 13px 27px;
   min-height: 48px;
   border: 1px solid var(--colors-ink);
 }
@@ -337,18 +338,34 @@ ul, ol {
   font-weight: var(--font-button-sm-weight);
   line-height: var(--font-button-sm-line);
   border-radius: var(--rounded-full);
-  padding: 10px 20px;
+  padding: 10px 24px;
 }
 
 .btn-sm {
-  padding: 10px 18px;
+  padding: 10px 22px;
   font-size: var(--font-button-sm-size);
   font-weight: var(--font-button-sm-weight);
   min-height: 40px;
+  border-radius: var(--rounded-full);
 }
 
 .btn-block {
   width: 100%;
+  border-radius: var(--rounded-full);
+}
+
+/* Universal rounded pill enforcement for all button elements */
+button,
+.btn,
+.check-room-btn,
+.hero-btn-main,
+.hero-btn-secondary,
+.nav-primary-cta,
+#contactSubmitBtn,
+#modalSubmitBtn,
+#modalSuccessCloseBtn,
+.final-cta-actions .btn {
+  border-radius: var(--rounded-full) !important;
 }
 
 /* guest-favorite-badge: white pill, ink text, 11px / 600 */
