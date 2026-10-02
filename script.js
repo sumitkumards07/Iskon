@@ -212,71 +212,75 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Handle Search Bar Submit
-  bookingForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+  // Handle Search Bar Submit (if form present)
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
 
-    const checkin = checkinInput.value;
-    const checkout = checkoutInput.value;
-    const guests = guestSelect.value;
-    const room = roomCategorySelect.value;
+      const checkin = checkinInput ? checkinInput.value : '';
+      const checkout = checkoutInput ? checkoutInput.value : '';
+      const guests = guestSelect ? guestSelect.value : '2 Guests';
+      const room = roomCategorySelect ? roomCategorySelect.value : 'Any Available Room';
 
-    if (!checkin || !checkout) {
-      bookingFormError.textContent = 'Please choose both check-in and check-out dates.';
-      bookingFormError.style.display = 'block';
-      return;
-    }
+      if (!checkin || !checkout) {
+        if (bookingFormError) {
+          bookingFormError.textContent = 'Please choose both check-in and check-out dates.';
+          bookingFormError.style.display = 'block';
+        }
+        return;
+      }
 
-    if (new Date(checkout) <= new Date(checkin)) {
-      bookingFormError.textContent = 'Check-out date must be after check-in date.';
-      bookingFormError.style.display = 'block';
-      return;
-    }
+      if (new Date(checkout) <= new Date(checkin)) {
+        if (bookingFormError) {
+          bookingFormError.textContent = 'Check-out date must be after check-in date.';
+          bookingFormError.style.display = 'block';
+        }
+        return;
+      }
 
-    bookingFormError.style.display = 'none';
-    openBookingModal(checkin, checkout, guests, room);
-  });
+      if (bookingFormError) bookingFormError.style.display = 'none';
+      openBookingModal(checkin, checkout, guests, room);
+    });
+  }
 
   // Handle Modal Contact Form Submit -> Transition to Success State
-  modalContactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('guestName').value.trim();
-    const phone = document.getElementById('guestPhone').value.trim();
+  if (modalContactForm) {
+    modalContactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('guestName')?.value.trim();
+      const phone = document.getElementById('guestPhone')?.value.trim();
 
-    if (!name || !phone) {
-      alert('Please enter your Name and Phone / WhatsApp number so our team can reach you.');
-      return;
-    }
+      if (!name || !phone) {
+        alert('Please enter your Name and Phone / WhatsApp number so our team can reach you.');
+        return;
+      }
 
-    // Switch to polished availability message
-    modalStepForm.style.display = 'none';
-    modalStepSuccess.style.display = 'block';
-  });
+      // Switch to polished availability message
+      if (modalStepForm) modalStepForm.style.display = 'none';
+      if (modalStepSuccess) modalStepSuccess.style.display = 'block';
+    });
+  }
 
   // --------------------------------------------------------------------------
-  // 6. Room Card Quick "Check Availability" Action
+  // 6. Room Card Quick "Check Availability" Action -> Scrolls to Contact Form
   // --------------------------------------------------------------------------
   document.querySelectorAll('.check-room-btn').forEach(button => {
     button.addEventListener('click', function() {
       const roomName = this.getAttribute('data-room');
-      if (roomName && roomCategorySelect) {
-        roomCategorySelect.value = roomName;
-      }
-
-      // Smooth scroll to booking section
-      const bookingSec = document.getElementById('booking');
-      if (bookingSec) {
-        const navHeight = topNav.offsetHeight || 80;
-        const targetPos = bookingSec.getBoundingClientRect().top + window.pageYOffset - navHeight - 16;
+      const contactSec = document.getElementById('contact');
+      if (contactSec) {
+        const navHeight = topNav ? topNav.offsetHeight : 80;
+        const targetPos = contactSec.getBoundingClientRect().top + window.pageYOffset - navHeight - 16;
         window.scrollTo({
           top: targetPos,
           behavior: 'smooth'
         });
 
-        // Flash focus on check-in
-        setTimeout(() => {
-          checkinInput.focus();
-        }, 600);
+        const contactMsg = document.getElementById('contactMessage');
+        if (contactMsg) {
+          contactMsg.value = `Hello, I would like to inquire about booking the ${roomName}. Please let me know the availability and rates.`;
+          contactMsg.focus();
+        }
       }
     });
   });

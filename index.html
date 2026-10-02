@@ -258,12 +258,12 @@
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <div class="nav-mobile-cta mobile-only">
-          <a href="#booking" class="btn btn-primary btn-block">Book Your Stay</a>
+          <a href="#contact" class="btn btn-primary btn-block">Book Your Stay</a>
         </div>
       </nav>
 
       <div class="nav-actions">
-        <a href="#booking" class="btn btn-primary nav-primary-cta">Book Your Stay</a>
+        <a href="#contact" class="btn btn-primary nav-primary-cta">Book Your Stay</a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -308,8 +308,8 @@
           </p>
 
           <div class="hero-cta-group">
-            <a href="#booking" class="btn btn-primary hero-btn-main">
-              Check Room Availability
+            <a href="#rooms" class="btn btn-primary hero-btn-main">
+              Explore Rooms
             </a>
             <a href="tel:+919068544108" class="btn btn-secondary hero-btn-secondary">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -322,90 +322,7 @@
       </div>
     </section>
 
-    <!-- 4. BOOKING SECTION — IMMEDIATELY BELOW HERO -->
-    <section class="booking-section" id="booking" aria-labelledby="booking-heading">
-      <div class="container">
-        <div class="booking-card">
-          <div class="booking-header">
-            <h2 id="booking-heading" class="booking-title">Plan Your Stay</h2>
-            <p class="booking-subtitle">Choose your dates and find the right room for your visit to Vrindavan.</p>
-          </div>
-
-          <form id="bookingForm" class="booking-form" novalidate>
-            <div class="search-bar-pill">
-              
-              <!-- Check-in Segment -->
-              <div class="search-field-segment">
-                <label for="checkinDate" class="field-label">Check-in</label>
-                <input 
-                  type="date" 
-                  id="checkinDate" 
-                  name="checkin" 
-                  class="field-input date-input" 
-                  required
-                >
-              </div>
-
-              <div class="segment-divider" aria-hidden="true"></div>
-
-              <!-- Check-out Segment -->
-              <div class="search-field-segment">
-                <label for="checkoutDate" class="field-label">Check-out</label>
-                <input 
-                  type="date" 
-                  id="checkoutDate" 
-                  name="checkout" 
-                  class="field-input date-input" 
-                  required
-                >
-              </div>
-
-              <div class="segment-divider" aria-hidden="true"></div>
-
-              <!-- Guests Segment -->
-              <div class="search-field-segment">
-                <label for="guestSelect" class="field-label">Guests</label>
-                <select id="guestSelect" name="guests" class="field-input select-input">
-                  <option value="1 Guest">1 Guest</option>
-                  <option value="2 Guests" selected>2 Guests</option>
-                  <option value="3 Guests">3 Guests</option>
-                  <option value="4+ Guests">4+ Guests</option>
-                </select>
-              </div>
-
-              <div class="segment-divider" aria-hidden="true"></div>
-
-              <!-- Room Category Segment -->
-              <div class="search-field-segment">
-                <label for="roomCategorySelect" class="field-label">Rooms</label>
-                <select id="roomCategorySelect" name="roomCategory" class="field-input select-input">
-                  <option value="Deluxe Room">Deluxe Room</option>
-                  <option value="Superior Room">Superior Room</option>
-                  <option value="Family / Suite Stay">Family / Suite Stay</option>
-                  <option value="Any Available Room" selected>All Categories</option>
-                </select>
-              </div>
-
-              <!-- Search Button / Orb -->
-              <div class="search-action-wrapper">
-                <button type="submit" class="search-orb" aria-label="Check Availability" id="checkAvailabilityBtn">
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                    <circle cx="11" cy="11" r="8"/>
-                    <path d="M21 21l-4.35-4.35"/>
-                  </svg>
-                  <span class="search-orb-text">Check Availability</span>
-                </button>
-              </div>
-            </div>
-
-            <!-- Form Validation Feedback Message -->
-            <div id="bookingFormError" class="form-error-message" role="alert" style="display: none;"></div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. INTRODUCTION / VALUE SECTION -->
+    <!-- 4. INTRODUCTION / VALUE SECTION -->
     <section class="section intro-section" id="about" aria-labelledby="intro-heading">
       <div class="container">
         <div class="editorial-grid">
@@ -621,7 +538,7 @@
         </div>
 
         <div class="section-footer-cta text-center">
-          <a href="#booking" class="btn btn-secondary">View All Stay Options</a>
+          <a href="#contact" class="btn btn-secondary">Enquire About Rooms</a>
         </div>
 
       </div>
@@ -1183,7 +1100,7 @@
               <div class="contact-button-group">
                 <a href="tel:+919068544108" class="btn btn-primary">Call Now</a>
                 <a href="mailto:iskconsevasadan@gmail.com" class="btn btn-secondary">Email Us</a>
-                <a href="#booking" class="btn btn-secondary">Book Your Stay</a>
+                <a href="https://wa.me/919068544108" class="btn btn-secondary" target="_blank" rel="noopener">WhatsApp Us</a>
               </div>
             </div>
 
@@ -1249,7 +1166,7 @@
           </p>
 
           <div class="final-cta-actions">
-            <a href="#booking" class="btn btn-primary">Check Room Availability</a>
+            <a href="#contact" class="btn btn-primary">Check Room Availability</a>
             <a href="#contact" class="btn btn-secondary final-cta-secondary-btn">Contact Us</a>
           </div>
         </div>
@@ -1330,7 +1247,7 @@
       </svg>
       <span>Call</span>
     </a>
-    <a href="#booking" class="mobile-sticky-btn mobile-book-btn" aria-label="Book stay now">
+    <a href="#contact" class="mobile-sticky-btn mobile-book-btn" aria-label="Book stay now">
       <span>Book Now</span>
     </a>
   </div>
