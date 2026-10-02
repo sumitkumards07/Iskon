@@ -1980,43 +1980,112 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   22. Mobile Sticky CTA Bar (< 768px)
+   22. Floating Actions Dock (Call Us & WhatsApp Hovering Buttons Settled Down)
    -------------------------------------------------------------------------- */
-.mobile-sticky-bar {
-  display: none;
+.floating-actions-dock {
   position: fixed;
-  bottom: 0;
+  bottom: 24px;
   left: 0;
+  right: 0;
   width: 100%;
-  background-color: var(--colors-canvas);
-  border-top: 1px solid var(--colors-hairline);
-  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
-  padding: 10px var(--spacing-base);
-  z-index: 1005;
+  padding: 0 28px;
+  pointer-events: none;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.mobile-sticky-btn {
-  flex: 1;
+.fab-btn {
+  pointer-events: auto;
   display: inline-flex;
   align-items: center;
+  gap: 10px;
+  height: 52px;
+  padding: 0 20px 0 12px;
+  border-radius: 9999px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16), 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, background-color 0.2s ease, color 0.2s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.fab-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.fab-btn:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.fab-icon-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: var(--spacing-xs);
-  height: 48px;
-  border-radius: var(--rounded-sm);
-  font-size: var(--font-button-md-size);
-  font-weight: var(--font-button-md-weight);
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.mobile-call-btn {
-  background-color: var(--colors-surface-soft);
+/* Call Button (Bottom-Left) */
+.fab-call {
+  background-color: #ffffff;
   color: var(--colors-ink);
-  border: 1px solid var(--colors-hairline);
-  margin-right: var(--spacing-sm);
+  border: 1.5px solid rgba(193, 53, 21, 0.25);
 }
 
-.mobile-book-btn {
+.fab-call .fab-icon-wrap {
+  background-color: rgba(193, 53, 21, 0.1);
+  color: var(--colors-primary);
+}
+
+.fab-call:hover {
+  box-shadow: 0 12px 28px rgba(193, 53, 21, 0.25), 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-color: var(--colors-primary);
+}
+
+.fab-call:hover .fab-icon-wrap {
   background-color: var(--colors-primary);
-  color: var(--colors-on-primary);
+  color: #ffffff;
+}
+
+/* WhatsApp Button (Bottom-Right) */
+.fab-whatsapp {
+  background-color: #25D366;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  animation: fab-pulse 3s infinite;
+}
+
+.fab-whatsapp .fab-icon-wrap {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+.fab-whatsapp:hover {
+  background-color: #20bd5a;
+  color: #ffffff;
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4), 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes fab-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55), 0 8px 24px rgba(0, 0, 0, 0.16);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0), 0 8px 24px rgba(0, 0, 0, 0.16);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 8px 24px rgba(0, 0, 0, 0.16);
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -2105,7 +2174,7 @@ ul, ol {
 /* Mobile & Small Tablet (< 768px) */
 @media (max-width: 768px) {
   body {
-    padding-bottom: 68px; /* space for mobile-sticky-bar */
+    padding-bottom: 32px;
   }
 
   .desktop-only {
@@ -2116,8 +2185,26 @@ ul, ol {
     display: block;
   }
 
-  .mobile-sticky-bar {
-    display: flex;
+  .floating-actions-dock {
+    bottom: 16px;
+    padding: 0 14px;
+  }
+
+  .fab-btn {
+    height: 48px;
+    padding: 0 14px 0 8px;
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .fab-icon-wrap {
+    width: 34px;
+    height: 34px;
+  }
+
+  .fab-icon-wrap svg {
+    width: 18px;
+    height: 18px;
   }
 
   .top-nav {
