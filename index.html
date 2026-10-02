@@ -39,130 +39,176 @@
 
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Structured Data: LodgingBusiness / Hotel with GEO Entity Links -->
+  <!-- Structured Data: Unified Schema.org @graph (claude-seo standard) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LodgingBusiness",
-    "name": "ISKCON Seva Sadan",
-    "alternateName": "Iskcon Seva Sadan Vrindavan",
-    "description": "Comfortable and welcoming accommodation in Madhuvan Colony near ISKCON Temple, Vrindavan.",
-    "url": "https://iskconsevasadan.com/",
-    "telephone": "+919068544108",
-    "email": "iskconsevasadan@gmail.com",
-    "image": [
-      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Madhuvan Colony, near ISKCON Temple",
-      "addressLocality": "Vrindavan",
-      "addressRegion": "Uttar Pradesh",
-      "postalCode": "281121",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 27.5753,
-      "longitude": 77.6630
-    },
-    "hasMap": "https://maps.google.com/?q=ISKCON+Temple+Madhuvan+Colony+Vrindavan+Uttar+Pradesh",
-    "containedInPlace": {
-      "@type": "Place",
-      "name": "Vrindavan",
-      "sameAs": "https://en.wikipedia.org/wiki/Vrindavan"
-    },
-    "amenityFeature": [
-      { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Hot Water", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Attached Bathrooms", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Parking", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Housekeeping", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Reception Assistance", "value": true },
-      { "@type": "LocationFeatureSpecification", "name": "Travel Assistance", "value": true }
-    ],
-    "priceRange": "$$"
-  }
-  </script>
-
-  <!-- Structured Data: FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Where is ISKCON Seva Sadan located?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "ISKCON Seva Sadan is located in Madhuvan Colony near ISKCON Temple in Vrindavan, Uttar Pradesh."
-        }
+        "@type": "WebSite",
+        "@id": "https://iskconsevasadan.com/#website",
+        "url": "https://iskconsevasadan.com/",
+        "name": "ISKCON Seva Sadan",
+        "description": "Comfortable stays near the spiritual heart of Vrindavan.",
+        "inLanguage": "en"
       },
       {
-        "@type": "Question",
-        "name": "How can I book a room?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Guests can use the room availability section on this website or contact the property directly."
-        }
+        "@type": "WebPage",
+        "@id": "https://iskconsevasadan.com/#webpage",
+        "url": "https://iskconsevasadan.com/",
+        "name": "ISKCON Seva Sadan Vrindavan | Stay Near ISKCON Temple",
+        "isPartOf": { "@id": "https://iskconsevasadan.com/#website" },
+        "about": { "@id": "https://iskconsevasadan.com/#hotel" },
+        "breadcrumb": { "@id": "https://iskconsevasadan.com/#breadcrumb" },
+        "inLanguage": "en"
       },
       {
-        "@type": "Question",
-        "name": "Is ISKCON Seva Sadan near ISKCON Temple?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. The property is located near ISKCON Temple in Vrindavan."
-        }
+        "@type": "Hotel",
+        "@id": "https://iskconsevasadan.com/#hotel",
+        "name": "ISKCON Seva Sadan",
+        "alternateName": "Iskcon Seva Sadan Vrindavan",
+        "description": "Comfortable and welcoming accommodation in Madhuvan Colony near ISKCON Temple, Vrindavan.",
+        "url": "https://iskconsevasadan.com/",
+        "telephone": "+919068544108",
+        "email": "iskconsevasadan@gmail.com",
+        "image": [
+          "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+          "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+          "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Madhuvan Colony, near ISKCON Temple",
+          "addressLocality": "Vrindavan",
+          "addressRegion": "Uttar Pradesh",
+          "postalCode": "281121",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 27.5753,
+          "longitude": 77.6630
+        },
+        "hasMap": "https://maps.google.com/?q=ISKCON+Temple+Madhuvan+Colony+Vrindavan+Uttar+Pradesh",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Credit Card, Debit Card",
+        "checkinTime": "12:00",
+        "checkoutTime": "11:00",
+        "priceRange": "$$",
+        "containedInPlace": {
+          "@type": "Place",
+          "name": "Vrindavan",
+          "sameAs": "https://en.wikipedia.org/wiki/Vrindavan"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+919068544108",
+          "contactType": "reservations",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi"]
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Hot Water", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Attached Bathrooms", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Parking", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Housekeeping", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Reception Assistance", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Travel Assistance", "value": true }
+        ],
+        "containsPlace": [
+          {
+            "@type": "Accommodation",
+            "name": "Deluxe Room",
+            "description": "A comfortable choice for guests looking for a peaceful and practical stay.",
+            "amenityFeature": ["Free Wi-Fi", "Air Conditioning", "Hot Water", "Attached Bathroom"]
+          },
+          {
+            "@type": "Accommodation",
+            "name": "Superior Room",
+            "description": "A spacious option designed for added comfort during your visit.",
+            "amenityFeature": ["Free Wi-Fi", "Air Conditioning", "Hot Water", "Attached Bathroom", "Seating Area"]
+          },
+          {
+            "@type": "Accommodation",
+            "name": "Family / Suite Stay",
+            "description": "A convenient option for guests travelling together and looking for extra space.",
+            "amenityFeature": ["Free Wi-Fi", "Air Conditioning", "Hot Water", "Attached Bathroom", "Spacious Layout"]
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "What amenities are available?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The property offers essential guest facilities such as Wi-Fi, air conditioning, hot water, attached bathrooms and other practical stay amenities."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://iskconsevasadan.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://iskconsevasadan.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Rooms & Stay",
+            "item": "https://iskconsevasadan.com/#rooms"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "How can I contact the property?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Call +91 90685 44108 or email iskconsevasadan@gmail.com."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Who is the property suitable for?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The accommodation is suitable for pilgrims, families, couples and travellers visiting Vrindavan."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Structured Data: BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://iskconsevasadan.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Rooms & Stay",
-        "item": "https://iskconsevasadan.com/#rooms"
+        "@type": "FAQPage",
+        "@id": "https://iskconsevasadan.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where is ISKCON Seva Sadan located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ISKCON Seva Sadan is located in Madhuvan Colony near ISKCON Temple in Vrindavan, Uttar Pradesh."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I book a room?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Guests can use the room availability section on this website or contact the property directly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is ISKCON Seva Sadan near ISKCON Temple?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The property is located near ISKCON Temple in Vrindavan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What amenities are available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The property offers essential guest facilities such as Wi-Fi, air conditioning, hot water, attached bathrooms and other practical stay amenities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I contact the property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call +91 90685 44108 or email iskconsevasadan@gmail.com."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is the property suitable for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The accommodation is suitable for pilgrims, families, couples and travellers visiting Vrindavan."
+            }
+          }
+        ]
       }
     ]
   }
