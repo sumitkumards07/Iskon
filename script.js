@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Format WhatsApp Message for direct booking enquiry
       const text = `Hare Krishna!\n*Stay Availability Request - ISKCON Seva Sadan, Vrindavan*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email || 'Not provided'}\n*Dates:* ${checkin}\n*Room Type:* ${room}\n*Guests:* ${guests}\n\nPlease let me know room availability and confirm my stay.`;
-      const waUrl = `https://wa.me/919068544108?text=${encodeURIComponent(text)}`;
+      const waUrl = `https://wa.me/919999999999?text=${encodeURIComponent(text)}`;
 
       // Switch to polished availability message
       if (modalStepForm) modalStepForm.style.display = 'none';
@@ -480,7 +480,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Format WhatsApp Message with full lead details
       const text = `Hare Krishna!\n*New Stay Enquiry - ISKCON Seva Sadan, Vrindavan*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email || 'Not provided'}\n*Dates / Requirement:* ${message || 'I would like to inquire about room availability and booking.'}`;
-      const waUrl = `https://wa.me/919068544108?text=${encodeURIComponent(text)}`;
+      const waUrl = `https://wa.me/919999999999?text=${encodeURIComponent(text)}`;
 
       if (contactFormStatus) {
         contactFormStatus.textContent = 'Connecting to WhatsApp... Our reception team will confirm your stay immediately.';
