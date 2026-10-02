@@ -243,21 +243,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Handle Modal Contact Form Submit -> Transition to Success State
+  // Handle Modal Contact Form Submit -> Transition to Success State & Send WhatsApp
   if (modalContactForm) {
     modalContactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('guestName')?.value.trim();
       const phone = document.getElementById('guestPhone')?.value.trim();
+      const email = document.getElementById('guestEmail')?.value.trim();
+      const checkin = document.getElementById('summaryDates')?.textContent || '';
+      const room = document.getElementById('summaryRoom')?.textContent || '';
+      const guests = document.getElementById('summaryGuests')?.textContent || '';
 
       if (!name || !phone) {
         alert('Please enter your Name and Phone / WhatsApp number so our team can reach you.');
         return;
       }
 
+      // Format WhatsApp Message for direct booking enquiry
+      const text = `Hare Krishna!\n*Stay Availability Request - ISKCON Seva Sadan, Vrindavan*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email || 'Not provided'}\n*Dates:* ${checkin}\n*Room Type:* ${room}\n*Guests:* ${guests}\n\nPlease let me know room availability and confirm my stay.`;
+      const waUrl = `https://wa.me/919068544108?text=${encodeURIComponent(text)}`;
+
       // Switch to polished availability message
       if (modalStepForm) modalStepForm.style.display = 'none';
       if (modalStepSuccess) modalStepSuccess.style.display = 'block';
+
+      // Open WhatsApp with pre-filled message
+      window.open(waUrl, '_blank');
     });
   }
 
@@ -318,30 +329,40 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------------------------------
   const galleryItems = [
     {
-      src: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1400&q=85',
-      category: 'Exterior',
-      title: 'Peaceful Grounds & Building Architecture'
+      src: 'assets/images/guest-house-near-iskcon-temple-vrindavan.webp',
+      fallback: 'assets/images/guest-house-near-iskcon-temple-vrindavan.jpg',
+      category: 'Temple Courtyard',
+      title: 'ISKCON Temple Courtyard & Sacred Tulasi Sanctum'
     },
     {
-      src: 'assets/images/room-deluxe-actual.png',
-      fallback: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1400&q=85',
-      category: 'Rooms',
-      title: 'Comfortable Bedding & Calming Guest Room'
+      src: 'assets/images/deluxe-room-iskcon-seva-sadan-vrindavan.webp',
+      fallback: 'assets/images/deluxe-room-iskcon-seva-sadan-vrindavan.jpg',
+      category: 'Deluxe Room',
+      title: 'Deluxe AC Room at ISKCON Seva Sadan, Vrindavan'
     },
     {
-      src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=85',
-      category: 'Reception',
-      title: 'Welcoming Check-in Area & Front Desk'
+      src: 'assets/images/superior-room-vrindavan-iskcon-seva-sadan.webp',
+      fallback: 'assets/images/superior-room-vrindavan-iskcon-seva-sadan.jpg',
+      category: 'Superior Room',
+      title: 'Superior Room Overlooking Temple Vicinity'
     },
     {
-      src: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1400&q=85',
-      category: 'Interior Details',
-      title: 'Peaceful Ashram Atmosphere & Details'
+      src: 'assets/images/family-suite-iskcon-seva-sadan-vrindavan.webp',
+      fallback: 'assets/images/family-suite-iskcon-seva-sadan-vrindavan.jpg',
+      category: 'Family Suite',
+      title: 'Spacious Family Suite for Pilgrim Families & Groups'
     },
     {
-      src: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1400&q=85',
-      category: 'Surroundings',
-      title: 'Spiritual Vicinity of Vrindavan near ISKCON Temple'
+      src: 'assets/images/gallery-aarti.webp',
+      fallback: 'assets/images/gallery-aarti.jpg',
+      category: 'Devotion',
+      title: 'Evening Sandhya Aarti & Kirtan Experience'
+    },
+    {
+      src: 'assets/images/gallery-yamuna-ghat.webp',
+      fallback: 'assets/images/gallery-yamuna-ghat.jpg',
+      category: 'Sacred Vrindavan',
+      title: 'Sacred Yamuna River & Historical Keshi Ghat at Sunset'
     }
   ];
 
@@ -433,7 +454,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --------------------------------------------------------------------------
-  // 9. Contact Enquiry Form Submission
+  // 9. Contact Enquiry Form Submission -> Redirect to WhatsApp
   // --------------------------------------------------------------------------
   const contactForm = document.getElementById('contactForm');
   const contactFormStatus = document.getElementById('contactFormStatus');
@@ -441,25 +462,36 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById('contactName').value.trim();
-      const phone = document.getElementById('contactPhone').value.trim();
-      const email = document.getElementById('contactEmail').value.trim();
+      const name = document.getElementById('contactName')?.value.trim() || '';
+      const phone = document.getElementById('contactPhone')?.value.trim() || '';
+      const email = document.getElementById('contactEmail')?.value.trim() || '';
+      const message = document.getElementById('contactMessage')?.value.trim() || '';
 
-      if (!name || !phone || !email) {
-        contactFormStatus.textContent = 'Please fill out your name, phone number, and email address.';
-        contactFormStatus.className = 'form-status-message';
-        contactFormStatus.style.display = 'block';
-        contactFormStatus.style.color = '#c13515';
-        contactFormStatus.style.backgroundColor = '#fff1f0';
+      if (!name || !phone) {
+        if (contactFormStatus) {
+          contactFormStatus.textContent = 'Please provide your Name and Phone / WhatsApp number.';
+          contactFormStatus.className = 'form-status-message';
+          contactFormStatus.style.display = 'block';
+          contactFormStatus.style.color = '#c13515';
+          contactFormStatus.style.backgroundColor = '#fff1f0';
+        }
         return;
       }
 
-      contactFormStatus.textContent = 'Thank you for reaching out. We have received your inquiry and our team will get in touch with you shortly.';
-      contactFormStatus.className = 'form-status-message success';
-      contactFormStatus.style.display = 'block';
-      contactFormStatus.style.color = '#389e0d';
-      contactFormStatus.style.backgroundColor = '#f6ffed';
+      // Format WhatsApp Message with full lead details
+      const text = `Hare Krishna!\n*New Stay Enquiry - ISKCON Seva Sadan, Vrindavan*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email || 'Not provided'}\n*Dates / Requirement:* ${message || 'I would like to inquire about room availability and booking.'}`;
+      const waUrl = `https://wa.me/919068544108?text=${encodeURIComponent(text)}`;
 
+      if (contactFormStatus) {
+        contactFormStatus.textContent = 'Connecting to WhatsApp... Our reception team will confirm your stay immediately.';
+        contactFormStatus.className = 'form-status-message success';
+        contactFormStatus.style.display = 'block';
+        contactFormStatus.style.color = '#389e0d';
+        contactFormStatus.style.backgroundColor = '#f6ffed';
+      }
+
+      // Open WhatsApp in new tab
+      window.open(waUrl, '_blank');
       contactForm.reset();
     });
   }

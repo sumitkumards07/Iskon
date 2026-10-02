@@ -1699,8 +1699,8 @@ button:not(.faq-question):not(.nav-toggle),
 
 .footer-top-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1.2fr;
-  gap: var(--spacing-xxl);
+  grid-template-columns: 1.4fr 1fr 1.1fr 1fr;
+  gap: var(--spacing-xl);
   padding-bottom: var(--spacing-xxl);
   border-bottom: 1px solid var(--colors-hairline-soft);
 }
@@ -2450,3 +2450,136 @@ button:not(.faq-question):not(.nav-toggle),
     font-size: 16px;
   }
 }
+
+/* --------------------------------------------------------------------------
+   21. Additional SEO Section Enhancements & Subpage Styles
+   -------------------------------------------------------------------------- */
+.lead-text {
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--colors-ink);
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-bullets-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-md) 0 var(--spacing-lg) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-bullets-list li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--colors-body);
+}
+
+.feature-bullets-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ff385c;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.room-details-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ff385c;
+  text-decoration: none;
+  margin-top: 8px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.room-details-link:hover {
+  color: #e00b41;
+  text-decoration: underline;
+  transform: translateX(2px);
+}
+
+.room-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--spacing-sm);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--colors-hairline-soft);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Temples & Attractions Section Grid */
+.temples-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+@media (max-width: 900px) {
+  .temples-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 600px) {
+  .temples-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.temple-card {
+  background: var(--colors-canvas);
+  border-radius: var(--rounded-lg);
+  border: 1px solid var(--colors-hairline);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.temple-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+.temple-badge-dist {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  align-self: flex-start;
+  background: #fff0f3;
+  color: #ff385c;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: var(--rounded-full);
+  margin-bottom: var(--spacing-xs);
+}
+
+.temple-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--colors-ink);
+  margin-bottom: 6px;
+}
+
+.temple-card-desc {
+  font-size: 13.5px;
+  color: var(--colors-muted);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
