@@ -354,18 +354,36 @@ ul, ol {
   border-radius: var(--rounded-full);
 }
 
-/* Universal rounded pill enforcement for all button elements */
-button,
+/* Universal rounded pill enforcement for all button elements, CTAs & badges */
+button:not(.faq-question):not(.nav-toggle),
 .btn,
+.btn-primary,
+.btn-secondary,
+.btn-pill-rausch,
+.btn-sm,
+.btn-block,
 .check-room-btn,
 .hero-btn-main,
 .hero-btn-secondary,
 .nav-primary-cta,
+.location-actions .btn,
+.contact-button-group .btn,
+.editorial-cta .btn,
+.section-footer-cta .btn,
+.final-cta-actions .btn,
 #contactSubmitBtn,
 #modalSubmitBtn,
 #modalSuccessCloseBtn,
-.final-cta-actions .btn {
+.fab-btn,
+.announcement-phone,
+.amenity-tag {
   border-radius: var(--rounded-full) !important;
+}
+
+/* Accordion questions and hamburger toggle keep clean square hitboxes */
+.faq-question,
+.nav-toggle {
+  border-radius: 0 !important;
 }
 
 /* guest-favorite-badge: white pill, ink text, 11px / 600 */
@@ -378,26 +396,27 @@ button,
   font-weight: var(--font-badge-weight);
   line-height: var(--font-badge-line);
   border-radius: var(--rounded-full);
-  padding: 4px 10px;
+  padding: 5px 12px;
   box-shadow: var(--shadow-tier);
   letter-spacing: 0.2px;
 }
 
-/* Form inputs: text-input */
+/* Form inputs: text-input (sleek pill shape for single-line inputs) */
 .text-input {
   width: 100%;
-  height: 56px;
+  height: 54px;
   background-color: var(--colors-canvas);
   color: var(--colors-ink);
   font-size: var(--font-body-md-size);
   border: 1px solid var(--colors-hairline);
-  border-radius: var(--rounded-sm);
-  padding: 14px 14px;
-  transition: border-color 0.2s ease;
+  border-radius: var(--rounded-full);
+  padding: 14px 22px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .text-input:focus {
-  border: 2px solid var(--colors-ink);
+  border-color: var(--colors-ink);
+  box-shadow: 0 0 0 1px var(--colors-ink);
   outline: none;
 }
 
@@ -407,7 +426,9 @@ button,
 
 .text-area {
   height: auto;
-  min-height: 100px;
+  min-height: 110px;
+  border-radius: 18px !important;
+  padding: 16px 20px;
   resize: vertical;
 }
 
@@ -478,9 +499,11 @@ button,
   gap: var(--spacing-xs);
   font-weight: 500;
   color: var(--colors-ink);
-  padding: 4px 8px;
-  border-radius: var(--rounded-xs);
-  transition: color 0.2s ease, background-color 0.2s ease;
+  padding: 4px 14px;
+  border-radius: var(--rounded-full);
+  border: 1px solid var(--colors-hairline);
+  background-color: var(--colors-canvas);
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .announcement-phone:hover {
@@ -880,10 +903,10 @@ button,
 
 .form-error-message {
   margin-top: var(--spacing-md);
-  padding: 10px 16px;
+  padding: 10px 20px;
   background-color: #fff1f0;
   color: var(--colors-primary-error-text);
-  border-radius: var(--rounded-sm);
+  border-radius: var(--rounded-full);
   font-size: var(--font-body-sm-size);
   text-align: center;
   border: 1px solid #ffccc7;
@@ -987,8 +1010,16 @@ button,
 }
 
 /* --------------------------------------------------------------------------
-   11. Rooms Section (Section 7)
+   8. Rooms Section (Immediately Below Hero)
    -------------------------------------------------------------------------- */
+.rooms-section {
+  position: relative;
+  background-color: var(--colors-canvas);
+  padding-top: var(--spacing-xxl);
+  padding-bottom: var(--spacing-xxl);
+  border-bottom: 1px solid var(--colors-hairline);
+}
+
 .rooms-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -996,21 +1027,21 @@ button,
   margin-bottom: var(--spacing-xxl);
 }
 
-/* property-card: #ffffff, 14px radius, 1px border hairline + shadow */
+/* property-card: #ffffff, 20px radius, 1px border hairline + shadow */
 .property-card {
   background-color: var(--colors-canvas);
-  border-radius: var(--rounded-md);
+  border-radius: 20px;
   border: 1px solid var(--colors-hairline);
   box-shadow: var(--shadow-tier);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .property-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
 
 .property-card-photo-wrapper {
@@ -1066,7 +1097,7 @@ button,
 .room-amenities-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   margin-bottom: var(--spacing-lg);
 }
 
@@ -1076,9 +1107,10 @@ button,
   color: var(--colors-ink);
   font-size: var(--font-micro-label-size);
   font-weight: 500;
-  padding: 4px 10px;
-  border-radius: var(--rounded-sm);
+  padding: 5px 12px;
+  border-radius: var(--rounded-full);
   border: 1px solid var(--colors-hairline-soft);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .room-card-footer {
@@ -1096,7 +1128,7 @@ button,
 }
 
 /* --------------------------------------------------------------------------
-   12. Amenities Section (Section 8)
+   9. Amenities Section (Section 6)
    -------------------------------------------------------------------------- */
 .amenities-grid {
   display: grid;
@@ -1107,7 +1139,7 @@ button,
 .amenity-card {
   background-color: var(--colors-canvas);
   border: 1px solid var(--colors-hairline);
-  border-radius: var(--rounded-md);
+  border-radius: 16px;
   padding: var(--spacing-lg);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
@@ -1120,13 +1152,19 @@ button,
 .amenity-icon-box {
   width: 48px;
   height: 48px;
-  border-radius: var(--rounded-sm);
+  border-radius: var(--rounded-full);
   background-color: var(--colors-surface-soft);
-  color: var(--colors-ink);
+  color: var(--colors-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: var(--spacing-base);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.amenity-card:hover .amenity-icon-box {
+  background-color: rgba(193, 53, 21, 0.1);
+  transform: scale(1.05);
 }
 
 .amenity-name {
@@ -1544,7 +1582,7 @@ button,
 .contact-form-panel {
   background-color: var(--colors-surface-soft);
   border: 1px solid var(--colors-hairline);
-  border-radius: var(--rounded-md);
+  border-radius: 20px;
   padding: var(--spacing-xl);
 }
 
@@ -1563,8 +1601,8 @@ button,
 
 .form-status-message {
   margin-top: var(--spacing-md);
-  padding: 10px 14px;
-  border-radius: var(--rounded-sm);
+  padding: 10px 20px;
+  border-radius: var(--rounded-full);
   font-size: var(--font-body-sm-size);
   text-align: center;
 }
@@ -1854,7 +1892,7 @@ button,
 .modal-summary-box {
   background-color: var(--colors-surface-soft);
   border: 1px solid var(--colors-hairline);
-  border-radius: var(--rounded-sm);
+  border-radius: 14px;
   padding: var(--spacing-md) var(--spacing-base);
   margin-bottom: var(--spacing-base);
 }
@@ -1904,7 +1942,7 @@ button,
 
 .success-details-card {
   background-color: var(--colors-surface-soft);
-  border-radius: var(--rounded-sm);
+  border-radius: 14px;
   padding: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
   font-size: var(--font-body-sm-size);
